@@ -1,7 +1,7 @@
 (function($){
   $(document).ready(function() {
     $('#toggleExpand').click(function() {
-    	$('#navbarSupportedContent').toggleClass('expand');
+    	$('#navbarSupportedContent').toggleClass('minimize');
     })
   })  
 })(window.jQuery)

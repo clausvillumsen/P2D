@@ -1,5 +1,7 @@
 P2D
 
+All build file can found in `docs`
+
 # Install
 
 ```

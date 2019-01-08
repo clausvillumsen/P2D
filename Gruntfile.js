@@ -25,17 +25,9 @@ module.exports = function(grunt) {
       options: {
         sections: {
           component: {
-            meta: '<%= partialPath %>component/post_meta.html',
             primary_menu: '<%= partialPath %>component/primary_menu.html',
             sidebar: '<%= partialPath %>component/sidebar.html',
             common_header: '<%= partialPath %>component/common_header.html'
-          },
-          widget: {
-            wp_menu: '<%= partialPath %>widget/wp_menu.html',
-            mystyle_contact: '<%= partialPath %>widget/mystyle_contact.html',
-            mystyle_social: '<%= partialPath %>widget/mystyle_social.html',
-            mystyle_blog: '<%= partialPath %>widget/mystyle_blog.html',
-            mystyle_subscribe: '<%= partialPath %>widget/mystyle_subscribe.html'
           },
           layout: {
             footer: '<%= partialPath %>layout/footer.html'

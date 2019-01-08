@@ -1,4 +1,5 @@
 .my-account-nav{  
+  margin-right: 20px;
   svg {
     height: 18px;
     fill: $primary-text-color;
@@ -18,25 +19,34 @@
     position: relative;    
   }
   .bell {
+    position: relative;
+    &.active {
+      svg {
+        fill: #fff;
+      }
+      &:after {
+        display: block;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #00b790;
+        border-radius: 999em;
+        position: absolute;
+        right: 0;
+        top: 15px;
+      }
+    }
     a {
       position: relative;
       &.dropdown-toggle:after {
         display: none;
       }
     }
-    i {
-      background: $dark !important;
-      color: #fff;
-    }
-    .badge {
-      font-size: 0.6rem;
-      position: absolute;
-      right: 0;
-      top: 0px;
-    }
   }
   > li {
     text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
     > a.nav-link {
       padding-right: 22px;
       > i{
