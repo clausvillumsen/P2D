@@ -495,27 +495,30 @@ img.align-center {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(104, 119, 249, 0.25); }
 
 .custom-file-input:focus ~ .custom-file-label {
-  box-shadow: none; }
+  box-shadow: none;
+  border-color: none; }
 
-.custom-file:hover .custom-file-label {
-  background-color: #6877f9;
-  border-color: #6877f9; }
-
-.custom-file .custom-file-label {
-  cursor: pointer;
-  background-color: #454545;
-  border-color: #454545;
-  color: #fff;
-  text-transform: uppercase;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
-  font-size: 13px;
-  font-family: "Heebo", arial, sans-serif;
-  padding-left: 2.2em;
-  padding-right: 2.2em;
-  line-height: 28px; }
-  .custom-file .custom-file-label:after {
-    display: none; }
+.custom-file {
+  cursor: pointer; }
+  .custom-file:hover .custom-file-label {
+    background-color: #6877f9;
+    border-color: #6877f9; }
+  .custom-file .custom-file-label {
+    cursor: pointer;
+    background-color: #454545;
+    border-color: #454545;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    font-size: 13px;
+    font-family: "Heebo", arial, sans-serif;
+    padding-left: 2.2em;
+    padding-right: 2.2em;
+    line-height: 28px;
+    height: 42px; }
+    .custom-file .custom-file-label:after {
+      display: none; }
 
 .custom-select:focus {
   border-color: #6877f9;

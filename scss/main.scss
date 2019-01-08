@@ -464,8 +464,10 @@ img {
 // INPUT FILE
 .custom-file-input:focus~.custom-file-label {
   box-shadow: none;
+  border-color: none;
 }
 .custom-file {
+  cursor: pointer;
   &:hover {    
     .custom-file-label {
       background-color: $primary-color;
@@ -485,6 +487,7 @@ img {
     padding-left: 2.2em;
     padding-right: 2.2em;
     line-height: 28px;
+    height: 42px;
     &:after {
       display: none;
     }
