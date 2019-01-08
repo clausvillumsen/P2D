@@ -1,0 +1,12 @@
+.navbar-toggler {
+	border: none;
+	svg {
+		fill: $primary-text-color;
+	}
+	&:hover,
+	&:focus {
+		svg {
+			fill: #fff;
+		}
+	}
+}

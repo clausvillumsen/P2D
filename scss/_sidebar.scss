@@ -2,9 +2,77 @@
   z-index: 100;
   padding: 0;
   background: #2b2b2b;
-  color: #646465;
-  flex-basis: 200px;
-	min-width: 200px;
+  color: #646465;  
+	width: $sidebarWidth;
+	position: fixed;
+	top: $headerHeight;
+	bottom: 0;
+	left: 0;
+	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+	&.collapse {
+		display: block;
+	}
+	@media (max-width: $breakpoint-sm) {
+		-moz-transform: translateX($sidebarWidth * -1);
+		-webkit-transform: translateX($sidebarWidth * -1);
+		-o-transform: translateX($sidebarWidth * -1);
+		-ms-transform: translateX($sidebarWidth * -1);
+		transform: translateX($sidebarWidth * -1);
+		&.show {
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-o-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+		}
+	}
+	.sidebar__bottom {
+		margin-top: auto;
+	}
+	.nav-sidebar-bottom {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-around;
+		li {
+			width: 40px;
+			text-align: center;
+			height: 40px;
+			
+		}
+		a {			
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			height: 40px;
+			align-items: center;
+			&:hover {
+				svg {
+					fill: #fff;
+				}
+			}
+			svg {
+				height: 18px;
+				fill: #9e9e9f;
+			}
+		}
+	}
   .nav-link {
     color: #646465;
     display: -webkit-flex;
@@ -25,7 +93,7 @@
     }
     svg {
     	fill: #9e9e9f;
-    	width: 21px;
+    	height: 18px;
     }
     &:hover {
       color: #fff;
@@ -39,13 +107,4 @@
       }
     }
   }
-}
-.sidebar-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: $headerHeight; /* Height of navbar */
-  height: calc(100vh - 60px);
-  padding-top: .5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }

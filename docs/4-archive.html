@@ -16,6 +16,7 @@
     <!-- CDN -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,700" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/style-responsive.css">
@@ -24,44 +25,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="js/common.js"></script>
+    <script src="js/output.js"></script>
 </head>
 
 <body class="mystyle archive category category-name">
     <header id="common__header" class="bg-dark">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">MyStyle</a>
-
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" /></svg>
+            </button>
+            <a class="navbar-brand" href="#">MyStyle</a>
             <ul class="navbar-nav ml-auto my-account-nav">
                 <li class="nav-item bell">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="ion-ios-bell"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" /></svg>
                         <span class="badge badge-pill badge-danger">12</span>
                     </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="ion-ios-person-outline"></i>
-                        Luu Binh An
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">
-                            <i class="ion-ios-person-outline"></i>
-                            My Profile
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <i class="ion-ios-email-outline"></i>
-                            Inbox
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <i class="ion-ios-settings"></i>
-                            Account settings
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <i class="ion-log-out"></i>
-                            Logout
-                        </a>
-                    </div>
                 </li>
             </ul>
         </nav>

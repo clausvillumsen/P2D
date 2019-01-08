@@ -31,18 +31,19 @@ $breakpoint-lg: 1440px;
 $breakpoint-laptop: 1366px;
 $breakpoint-m: 1280px;
 $breakpoint-ipad: 1024px;
-$breakpoint-sm: 768px;
+$breakpoint-sm: 767px;
 $breakpoint-xs: 600px;
 $breakpoint-xxs: 480px;
 $headerHeight: 60px;
+$sidebarWidth: 200px;
 
 /*-----------------------------
 # [Typography]
 ----------------------------- */
 
 $font-size-base: 1rem;
-$san-serif: Oxygen, arial, sans-serif;
-$serif: 'Source Sans Pro', 'Times New Roman', Times, serif;
+$san-serif: 'Heebo', arial, sans-serif;
+$serif: 'Times New Roman', Times, serif;
 $monospace: Inconsolata, monospace;
 
 /*-----------------------------
