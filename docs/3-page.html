@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Document</title>
+
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Favicon 32x32 and 180x180 -->
+    <link rel="icon" sizes="32x32" href="" type="image/png" />
+    <link rel="icon" sizes="180x180" href="" type="image/png" />
+
+    <!-- CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- DO NOT TOUCH -->
+    <link rel="stylesheet" type="text/css" href="css/woocommerce.css">
+    <link rel="stylesheet" type="text/css" href="css/woocommerce-layout.css">
+
+    <!-- AUTO CONCAT -->
+    <link rel="stylesheet" type="text/css" href="css/concat.css">
+
+    <!-- MANUAL UPDATE -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style-responsive.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <!-- Init MAPS -->
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'));
+        }
+    </script>
+
+    <script src="js/animations.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+    <script src="js/plugin.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhktXAG6guKrLzHSMjAqPO9ki-SKP556Y" async defer></script>
+</head>
+
+<body class="mystyle">
+    <!-- TOOLBAR -->
+    <div id="toolbar">
+        <nav class="toolbar">
+            <div class="toolbar-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 col-lg-8">
+                            <ul class="top-nav">
+                                <li><a href="3-page.html">Single Page</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single Post<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="1-single.html">Standard</a>
+                                            <a href="1-single.html">Gallery</a>
+                                            <a href="1-single.html">Video</a>
+                                            <a href="1-single.html">Job</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="4-archive.html">Archive</a></li>
+                                <li><a href="2-404.html">404</a></li>
+                                <li><a href="5-search.html">Search Result</a></li>
+                                <li><a href="17-contact-form-7.html">Contact Form 7</a></li>
+                                <li><a href="7-woo-login.html">Woo - Login</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-lg-4">
+                            <div class="topnote">
+                                0943.870.301 - luubinhan1989@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- toolbar-inner -->
+        </nav>
+        <!-- toolbar -->
+    </div>
+    <!-- / TOOLBAR -->
+
+    <!-- HEADER -->
+    <div id="header">
+        <header class="header">
+            <div class="header-inner">
+                <nav class="navbar navbar-default main-nav-wrap navbar-static-top">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				    <span class="sr-only">Toggle navigation</span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				  </button>
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav primary-menu">
+                                <li><a href="index.html">Posts</a></li>
+                                <li><a href="13-woo-products.html">Products</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Component <span class="caret"></span></a>
+
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-left search-box" method="get" action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control s" placeholder="Search" name="s">
+                                </div>
+                                <button type="submit" id="searchsubmit" class="btn btn-default"><i class="ion-ios-search-strong"></i></button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WP<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+
+                                        <li class="menu-item"><a href="2-404.html">404</a></li>
+                                        <li class="menu-item"><a href="3-page.html">Page - Single</a></li>
+                                        <li class="menu-item"><a href="1-single.html">Post - Single</a></li>
+                                        <li class="menu-item"><a href="4-archive.html">Archive</a></li>
+                                        <li class="menu-item"><a href="15-posts-grid.html">Posts - Grid</a></li>
+                                        <li class="menu-item"><a href="16-column.html">Column</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WooCommerce<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="menu-item"><a href="13-woo-products.html">Products</a></li>
+                                        <li class="menu-item"><a href="9-woo-cart-1.html">Cart</a></li>
+                                        <li class="menu-item"><a href="6-woo-account.html">Account</a></li>
+                                        <li class="menu-item"><a href="7-woo-login.html">Login</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Elements<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+
+                                        <li class="menu-item"><a href="18-typography.html">Typography</a></li>
+                                        <li class="menu-item"><a href="19-infographic.html">Infographic</a></li>
+                                        <li class="menu-item"><a href="20-standard-elements.html">Standard Elements</a></li>
+                                        <li class="menu-item"><a href="21-interactive-elements.html">Interactive Elements</a></li>
+                                        <li class="menu-item"><a href="http://ionicons.com/" target="_blank">Icons</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+            <!-- / header-inner -->
+        </header>
+        <!-- / header -->
+    </div>
+    <!-- / HEADER -->
+
+    <main id="master" class="master">
+        <div class="master-inner">
+
+            <div class="container">
+                <article class="single-post">
+                    <header class="single-post-heading">Icing caramels lemon drops candy tiramisu danish.</header>
+                    <aside class="post-meta">
+                        <div class="post-date">
+                            <time class="dateline" datetime="2016-12-29" itemprop="dateModified" content="2016-12-29">Dec. 29, 2016</time>
+                        </div>
+                        <!-- post-date -->
+                        <div class="post-category">
+                            IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                        </div>
+                        <!-- post-category -->
+
+                    </aside>
+                    <!-- post-meta -->
+
+                    <section class="post-content">
+                        <p>
+                            Veggies sunt bona vobis, proinde vos postulo esse magis okra collard greens water spinach lettuce turnip greens kombu pea prairie turnip nori celtuce gram kale wattle seed sierra leone bologi yarrow.
+                        </p>
+                        <p>Water chestnut green bean fennel bunya nuts prairie turnip soybean bell pepper plantain winter purslane gourd ricebean yarrow cauliflower okra radicchio taro tatsoi daikon. Grape broccoli rabe onion tomatillo turnip chickpea arugula
+                            endive cucumber sweet pepper corn brussels sprout ricebean catsear spinach. Carrot lotus root bell pepper ricebean chickweed brussels sprout gumbo.
+                        </p>
+                        <p>Celery daikon pea sprouts broccoli sorrel celery horseradish kombu nori tigernut gram kale bush tomato kakadu plum shallot. Endive gourd chickpea garlic dandelion daikon bell pepper asparagus bok choy garlic eggplant peanut lotus
+                            root sierra leone bologi bitterleaf gumbo kohlrabi cabbage. Rock melon bush tomato okra kombu sierra leone bologi cress. Quandong turnip sorrel aubergine gourd winter purslane garlic spinach napa cabbage wakame kohlrabi corn
+                            ricebean turnip greens. Radish rock melon courgette prairie turnip winter purslane garlic shallot.
+                        </p>
+
+                    </section>
+
+                </article>
+                <!-- single-post-->
+            </div>
+
+        </div>
+        <!-- master-inner -->
+    </main>
+    <!-- master -->
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <footer class="footer">
+            <section class="footer-inner">
+                <div class="container">
+                    <div class="copyright">
+                        Contact : 0943.870.301 - Email: luubinhan1989@gmail.com
+                    </div>
+                    <!-- copyright -->
+                    <div class="credit">
+                        © Copyright 2011-2016 An.Luu, All rights reserved
+                    </div>
+                    <!-- credit -->
+                </div>
+                <!-- container -->
+            </section>
+            <!-- / footer-inner -->
+        </footer>
+        <!-- / footer -->
+    </div>
+    <!-- / FOOTER -->
+</body>
+
+</html>

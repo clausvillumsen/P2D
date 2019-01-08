@@ -1,0 +1,59 @@
+/*-----------------------------
+# [MIXIN]
+----------------------------- */
+@mixin link() {
+  color: $link-color;
+  text-decoration: none;
+  outline: none;
+}
+@mixin paragraph() {
+  
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin heading1() { 
+  font-size: 30px;
+    line-height: 36px;
+    line-height: 1.2;
+}
+@mixin heading2() { 
+  font-size: 24px;
+  line-height: 36px;
+  line-height: 1.2;
+}
+@mixin heading3() { 
+  line-height: 27px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+@mixin heading4() { 
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+@mixin heading5() { 
+  font-size: 12px;
+  line-height: 18px;
+  line-height: 1.2;
+}
+@mixin heading6() { 
+  font-size: 11px;
+  line-height: 18px;
+  line-height: 1.2;
+}
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+@mixin transition-transform($transition) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}

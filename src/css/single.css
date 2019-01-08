@@ -1,0 +1,24 @@
+/* Single
+-------------------------------------------------------------- */
+.single-post-heading {
+  font-size: 30px;
+  line-height: 36px;
+  line-height: 1.2;
+}
+.single-tags-title {
+  display: inline;
+  color: #949494;
+}
+.single-tags-holder {
+  margin-bottom: 5px;
+}
+.single-post-content {
+  margin-bottom: 30px;
+}
+.tags {
+  display: inline-block;
+}
+.single-post .figure2 {
+  margin-bottom: 40px;
+}
+/* Single -------------------------------------------------------------- */

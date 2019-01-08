@@ -1,0 +1,26 @@
+/* WIDGET: product_list_widget
+-------------------------------------------- */
+.product_list_widget {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.product_list_widget > li {
+  margin-bottom: 10px;
+}
+.product_list_widget > li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.product_list_widget > li > a {
+  display: block;
+  margin-right: 7px;
+  float: left;
+  width: 50px;
+}
+.product_list_widget h5 {
+  margin-bottom: 0;
+}
+
+/* WIDGET: product_list_widget-------------------------------------------- */

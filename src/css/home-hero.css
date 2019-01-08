@@ -1,0 +1,179 @@
+/* ==============================
+   Home sections
+   ============================== */
+  
+/*
+ * Header common styles
+ */
+
+.home-section{
+	width: 100%;
+	display: block;	
+	position: relative;
+    overflow: hidden;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.home-content{
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+
+/* Home content */
+
+.home-content{
+	position: relative;
+}
+.home-text{
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/* Scroll down icon */
+
+@-webkit-keyframes scroll-down-anim {
+	0%{ top: -7px; }
+	50%{ top: 3px; }
+	100%{ top: -7px; }
+}
+@-moz-keyframes scroll-down-anim {
+	0%{ top: -7px; }
+	50%{ top: 3px; }
+	100%{ top: -7px; }
+}
+@-o-keyframes scroll-down-anim {
+	0%{ top: -7px; }
+	50%{ top: 3px; }
+	100%{ top: -7px; }
+}
+@keyframes scroll-down-anim {
+	0%{ top: -7px; }
+	50%{ top: 3px; }
+	100%{ top: -7px; }
+}
+
+.scroll-down{
+	width: 150px;
+	height: 43px;
+	margin-left: -75px;
+	line-height: 43px;
+	white-space: nowrap;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgba(255,255,255, .5) !important;
+	
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+
+}
+
+
+.scroll-down:hover,
+.scroll-down:focus{
+	text-decoration: none;
+	letter-spacing: 6px;
+	color: rgba(255,255,255, 0) !important;
+}
+.scroll-down.static,
+.scroll-down.static{
+	color: rgba(255,255,255, .4) !important;
+}
+.scroll-down.static:hover,
+.scroll-down.static:focus{
+	letter-spacing: 3px;
+	color: rgba(255,255,255, .85) !important;
+}
+.scroll-down-icon{
+	width: 26px;
+	height: 100%;
+	margin-left: -13px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border: 2px solid rgba(255,255,255, .35);
+	
+	-moz-border-radius: 13px;
+	-webkit-border-radius: 13px;
+	border-radius: 13px;
+	
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	
+	-webkit-animation: scroll-down-anim 1s infinite;
+    -moz-animation: scroll-down-anim 1s infinite;
+    -o-animation: scroll-down-anim 1s infinite;
+    animation: scroll-down-anim 1s infinite; 
+}
+
+.scroll-down-icon:after{
+	content: " ";
+	width: 2px;
+	height: 12px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1px;
+	background: rgba(255,255,255, .35);
+	
+	-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.scroll-down:hover .scroll-down-icon{
+	background: rgba(255,255,255, .7);
+}
+
+.scroll-down:hover .scroll-down-icon:after{
+	background: rgba(0,0,0, .5);
+}
+.scroll-down.light:hover .scroll-down-icon:after,
+.bg-color .scroll-down:hover .scroll-down-icon:after,
+.bg-color-alfa .scroll-down:hover .scroll-down-icon:after,
+.bg-color-alfa-30 .scroll-down:hover .scroll-down-icon:after,
+.bg-color-alfa-50 .scroll-down:hover .scroll-down-icon:after,
+.bg-color-alfa-70 .scroll-down:hover .scroll-down-icon:after,
+.bg-color-alfa-90 .scroll-down:hover .scroll-down-icon:after{
+	background: rgba(255,255,255, .15);
+}
+
+
+/* Animated header */
+
+.ah-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	top: 0;
+	left: 0;
+}
+.hs-line-4 {
+	font-size: 65px;
+	line-height: 1.3;
+}
+.hs-line-5 {
+	font-size: 14px;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,71 @@
+/* content-post.php
+-------------------------------------------------------------- */
+.item-post {
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+}
+* .item-post:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+.heading-post {
+  font-size: 30px;
+  line-height: 36px;
+  line-height: 1.2;
+}
+.post-date {
+  display: inline-block;
+  position: relative;
+  color: #949494;
+  padding-right: 20px;
+}
+.post-category {
+  display: inline-block;
+  color: #949494;
+}
+.post-meta {
+  margin-bottom: 5px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+.post-date:after {
+  content: "/";
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+.the-post-thumbnail {
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+.the-post-thumbnail + .the-post-content {
+  overflow: hidden;
+}
+.item-post .social-link-container {
+  text-align: right;
+}
+.item-post .s-link {
+  padding: 0px 8px;
+  font-size: 11px;
+}
+@media (max-width: 480px) {
+  .the-post-thumbnail {
+    float: none;
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+#gridLayout .the-post-thumbnail {
+  float: none;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+#gridLayout .item-post {
+  padding-top: 0;
+}
+/* content-post.php -------------------------------------------- */
