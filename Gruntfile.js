@@ -27,6 +27,7 @@ module.exports = function(grunt) {
           component: {
             meta: '<%= partialPath %>component/post_meta.html',
             primary_menu: '<%= partialPath %>component/primary_menu.html',
+            sidebar: '<%= partialPath %>component/sidebar.html',
             common_header: '<%= partialPath %>component/common_header.html'
           },
           widget: {

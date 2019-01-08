@@ -7,53 +7,109 @@
   outline: none;
 }
 @mixin paragraph() {
-  
+  line-height: 1.6;
+  font-family: $san-serif;
 }
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+@mixin heading1() {
+  margin-top: 48px;
+  color: rgba(0,0,0,.54);  
 }
-@mixin heading1() { 
-  font-size: 30px;
-    line-height: 36px;
-    line-height: 1.2;
-}
-@mixin heading2() { 
-  font-size: 24px;
-  line-height: 36px;
-  line-height: 1.2;
+@mixin heading2() {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: rgba(0,0,0,.54);
 }
 @mixin heading3() { 
-  line-height: 27px;
-  font-size: 18px;
-  line-height: 1.2;
+  color: rgba(0,0,0,.85);
 }
-@mixin heading4() { 
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: bold;
-  line-height: 1.2;
+@mixin heading4() {
+  color: rgba(0,0,0,.85);
+  letter-spacing: 0.05px;
 }
-@mixin heading5() { 
-  font-size: 12px;
-  line-height: 18px;
-  line-height: 1.2;
+@mixin heading5() {
+  color: rgba(0,0,0,.87);
+  letter-spacing: 0.1px;
 }
 @mixin heading6() { 
-  font-size: 11px;
-  line-height: 18px;
-  line-height: 1.2;
+  font-weight: bold;
+  letter-spacing: 0.2px;
 }
-@mixin transition($transition) {
-  -webkit-transition: $transition;
-       -o-transition: $transition;
-          transition: $transition;
+@mixin defaultInput(){
+  border: 1px solid $input-border-color;
+  background: #fff;  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  width: 100%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
-@mixin transition-transform($transition) {
-  -webkit-transition: -webkit-transform $transition;
-     -moz-transition: -moz-transform $transition;
-       -o-transition: -o-transform $transition;
-          transition: transform $transition;
+@mixin defaultInputFocus(){
+  border-color: $primary-color;
+  outline: 0;
+}
+@mixin defaultButtonFocus() {
+  box-shadow: inset 0 0 40px rgba(0,0,0,.1);
+}
+@mixin defaultButton() {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+@mixin defaultSubmit(){
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: .25rem;
+  transition: all .15s ease-in-out;
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: #fff;
+  cursor: pointer;
+}
+@mixin defaultSelect(){
+  display: inline-block;
+  max-width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem 1.75rem .375rem .75rem;
+  line-height: 1.25;
+  color: #495057;
+  vertical-align: middle;
+  background: #fff url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") no-repeat right .75rem center;
+  background-size: 8px 10px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@mixin defaultCheckbox(){
+  
 }

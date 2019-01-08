@@ -1,0 +1,51 @@
+.sidebar {  
+  z-index: 100;
+  padding: 0;
+  background: #2b2b2b;
+  color: #646465;
+  flex-basis: 200px;
+	min-width: 200px;
+  .nav-link {
+    color: #646465;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    .name {
+      margin-left: 15px;
+      padding: 7px 15px;
+    }
+    .icon-holder {
+    	flex-basis: 21px;
+    	min-width: 21px;
+    }
+    svg {
+    	fill: #9e9e9f;
+    	width: 21px;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+  .active {
+    .nav-link {
+      .name {
+        border-radius: 5px;
+        background: rgba(0,0,0,.3);  
+      }
+    }
+  }
+}
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: $headerHeight; /* Height of navbar */
+  height: calc(100vh - 60px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}

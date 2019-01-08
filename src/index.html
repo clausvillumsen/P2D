@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-  <title>MyStyle</title>
+<head>  
+  <title>P2D</title>
   <!-- build:section component.common_header --><!-- /build -->  
 </head>
-<body class="mystyle page-home">
-<!-- build:section component.primary_menu --><!-- /build -->
+<body>
+<!-- build:section component.primary_menu --><!-- /build -->  
+<div id="master">
+  <div class="master-inner">
+    <div id="layoutApp">
+      <!-- build:section component.sidebar --><!-- /build -->
+      <section id="primaryContent">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+              <h1 class="h2">Dashboard</h1>
+              <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group mr-2">
+                  <button class="btn btn-sm btn-outline-secondary">Import</button>
+                  <button class="btn btn-sm btn-outline-secondary">Export</button>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                  This week
+                </button>
+              </div>
+        </div>
+      </section>
+    </div>
+  </div> <!-- master-inner -->
+</div>  <!-- master -->
 <!-- build:section layout.footer --><!-- /build -->

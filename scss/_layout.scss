@@ -1,0 +1,26 @@
+#common__header {
+  font-size: .875rem;  
+  height: $headerHeight;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  .navbar-brand {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+#master {
+  padding-top: $headerHeight;
+}
+#layoutApp {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+#primaryContent {
+  flex-grow: 1;
+}
