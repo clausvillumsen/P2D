@@ -40,7 +40,8 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-  font-family: "Heebo", arial, sans-serif; }
+  font-family: "Heebo", arial, sans-serif;
+  font-size: 15px; }
 
 img {
   max-width: 100%; }
@@ -390,8 +391,14 @@ img.align-center {
   font-family: "Heebo", arial, sans-serif;
   padding-left: 2.2em;
   padding-right: 2.2em; }
-  .btn + .btn {
-    margin-left: 20px; }
+  .btn svg {
+    height: 18px;
+    fill: #9e9e9f; }
+  .btn.btn-icon {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .btn.btn-icon svg {
+      fill: #606062; }
   .btn.btn-link {
     padding-left: 0;
     padding-right: 0;
@@ -500,6 +507,10 @@ img.align-center {
 
 .custom-file {
   cursor: pointer; }
+  .custom-file svg {
+    height: 18px;
+    fill: #fff;
+    padding-right: 7px; }
   .custom-file:hover .custom-file-label {
     background-color: #6877f9;
     border-color: #6877f9; }
@@ -519,6 +530,9 @@ img.align-center {
     height: 42px; }
     .custom-file .custom-file-label:after {
       display: none; }
+
+.navbar-brand {
+  padding-left: 25px; }
 
 .custom-select:focus {
   border-color: #6877f9;
@@ -558,7 +572,7 @@ img.align-center {
   background-color: #e41919 !important; }
 
 .bg-warning {
-  background-color: #ffce02 !important; }
+  background-color: #f5a623 !important; }
 
 .bg-info {
   background-color: #27c5c3 !important; }
@@ -579,7 +593,7 @@ img.align-center {
   background-color: #65B044 !important; }
 
 .bg-yellow {
-  background-color: #ffce02 !important; }
+  background-color: #f5a623 !important; }
 
 .bg-cyan {
   background-color: #27c5c3 !important; }
@@ -683,6 +697,82 @@ img.align-center {
     margin-left: auto;
     margin-right: auto; }
 
+.common__section {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  min-width: 80vw;
+  background: #252527;
+  box-shadow: -1px -1px 3px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  align-self: stretch;
+  margin-right: 40px; }
+  .common__section .section-header {
+    border-radius: 4px 4px 0 0;
+    background: #232324;
+    border-bottom: 1px solid #1e1e1e;
+    border-top: 1px solid #3e3e3f;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between; }
+  .common__section .section-body {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto; }
+  .common__section .section-name {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 20px; }
+  .common__section .btn-icon {
+    box-shadow: none;
+    align-self: stretch;
+    height: 100%; }
+
+.common_icon-muted svg {
+  height: 18px;
+  fill: #b0b0b1; }
+
+.common__page-name {
+  background: #fff;
+  padding: 13px 40px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4e4b61; }
+  .common__page-name .left-block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; }
+  .common__page-name .right-block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    text-align: right; }
+  .common__page-name .page-name {
+    text-transform: uppercase;
+    color: #2b2b2c;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 24px; }
+  .common__page-name .page-folder svg {
+    height: 18px;
+    fill: #b0b0b1;
+    margin-right: 12px; }
+
 #common__header {
   font-size: .875rem;
   height: 60px;
@@ -703,18 +793,51 @@ img.align-center {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
-  display: flex;
-  padding-left: 225px; }
+  display: flex; }
   @media (max-width: 767px) {
     #layoutApp {
       padding-left: 0; } }
 
+.sidebar.minimize + #primaryContent {
+  padding-left: 70px; }
+
 #primaryContent {
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding-left: 225px;
+  height: calc(100vh - 80px);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column; }
   @media (max-width: 767px) {
     #primaryContent {
       padding-left: 20px;
       padding-right: 20px; } }
+  #primaryContent .primary-inner {
+    padding: 40px;
+    flex-grow: 1;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow-x: auto;
+    width: calc(100vw - 225px); }
+    #primaryContent .primary-inner::-webkit-scrollbar {
+      width: 3px; }
+    #primaryContent .primary-inner::-webkit-scrollbar-track {
+      background: #35353a; }
+    #primaryContent .primary-inner::-webkit-scrollbar-thumb {
+      background: #242427; }
+
+#layoutApp.minimize #primaryContent .primary-inner {
+  width: calc(100vw - 70px); }
 
 .sidebar {
   z-index: 100;
@@ -910,3 +1033,46 @@ img.align-center {
     fill: #9e9e9e; }
   .navbar-toggler:hover svg, .navbar-toggler:focus svg {
     fill: #fff; }
+
+#bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px 4px 0 0; }
+  #bottomBar .link-action {
+    box-shadow: -1px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    background: #1a1a1d;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    font-weight: 500;
+    display: block;
+    padding: 16px 50px; }
+    @media (max-width: 600px) {
+      #bottomBar .link-action {
+        padding-left: 15px;
+        padding-right: 15px; } }
+    #bottomBar .link-action:first-child {
+      border-radius: 4px 0 0 0; }
+    #bottomBar .link-action:last-child {
+      border-radius: 0 4px 0 0; }
+    #bottomBar .link-action:hover {
+      background-color: #6877f9;
+      color: #fff; }
+      #bottomBar .link-action:hover svg {
+        fill: #fff; }
+    #bottomBar .link-action .name {
+      padding-left: 20px; }
+    #bottomBar .link-action:hover {
+      text-decoration: none; }
+    #bottomBar .link-action svg {
+      height: 18px;
+      fill: #9e9e9e; }

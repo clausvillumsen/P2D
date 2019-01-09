@@ -31,6 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   font-family: $san-serif;
+  font-size: 15px;
 }
 img {
   max-width: 100%;
@@ -305,8 +306,16 @@ img {
   font-family: $san-serif;
   padding-left: 2.2em;
   padding-right: 2.2em;
-  + .btn {
-    margin-left: 20px;
+  svg {
+    height: 18px;
+    fill: #9e9e9f;
+  }
+  &.btn-icon {
+    padding-left: 15px;
+    padding-right: 15px;
+    svg {
+      fill: #606062;
+    }
   }
   &.btn-link {
     padding-left: 0;
@@ -468,6 +477,11 @@ img {
 }
 .custom-file {
   cursor: pointer;
+  svg {
+    height: 18px;
+    fill: #fff;
+    padding-right: 7px;
+  }
   &:hover {    
     .custom-file-label {
       background-color: $primary-color;
@@ -493,7 +507,9 @@ img {
     }
   }
 }
-
+.navbar-brand {
+  padding-left: 25px;
+}
 // Select
 .custom-select {
   &:focus {
@@ -641,8 +657,97 @@ img {
     margin-right: auto;
   }
 }
+.common__section {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  min-width: 80vw;
+  background: #252527;
+  box-shadow: -1px -1px 3px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  align-self: stretch;
+  margin-right: 40px;
+  .section-header {
+    border-radius: 4px 4px 0 0;
+    background: #232324;
+    border-bottom: 1px solid #1e1e1e;
+    border-top: 1px solid #3e3e3f;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-body {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  .section-name {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 20px;
+  }
+  .btn-icon {
+    box-shadow: none;
+    align-self: stretch;
+    height: 100%;
+  }
+}
+.common_icon-muted {
+  svg {
+    height: 18px;
+    fill: #b0b0b1;
+  }
+}
+.common__page-name {
+  background: #fff;
+  padding: 13px 40px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4e4b61;
+  .left-block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  .right-block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    text-align: right;
+  }
+  .page-name {
+    text-transform: uppercase;
+    color: #2b2b2c;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 24px;
+  }
+  .page-folder {
+    svg {
+      height: 18px;
+      fill: #b0b0b1;
+      margin-right: 12px;
+    }
+  }
+}
 
 @import 'layout';
 @import 'sidebar';
 @import 'myAccount';
 @import 'primaryMenu';
+@import 'bottomBar';
