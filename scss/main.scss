@@ -509,6 +509,13 @@ img {
 }
 .navbar-brand {
   padding-left: 25px;
+  @media (max-width: $breakpoint-xs) {
+    padding-left: 5px;
+    img {
+      height: 25px;
+
+    }
+  }
 }
 // Select
 .custom-select {
@@ -544,6 +551,27 @@ img {
 .dropdown-item.active, .dropdown-item:active {
   background-color: $primary-color;
 }
+// Badge
+.badge {
+  padding: 4px 7px;
+  letter-spacing: 1.9px;
+  font-size: 12px;
+  font-weight: 500;
+  min-height: 18px;
+  border-radius: 2px;
+  &.badge-warning {
+    color: #fff;
+    background: #f5a623;
+  }
+  .common_icon-muted {
+    top: -2px;
+    position: relative;
+    svg {
+      fill: #fff;
+      height: 12px;  
+    }
+  }
+}
 /*-----------------------------
 # [OVERRIDE Utitilities]
 ----------------------------- */
@@ -558,7 +586,7 @@ img {
 .bg-warning { background-color: $yellow !important; }
 .bg-info { background-color: $cyan !important; }
 .bg-light { background-color: $gray !important; }
-.bg-dark { background-color: $dark !important; }
+.bg-dark { background-color: #2b2b2b !important; }
 // ... and my custom background
 .bg-blue { background-color: $blue !important; }
 .bg-red { background-color: $red !important; }
@@ -670,6 +698,10 @@ img {
   border-radius: 4px;
   align-self: stretch;
   margin-right: 40px;
+  @media (max-width: $breakpoint-sm) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
   .section-header {
     border-radius: 4px 4px 0 0;
     background: #232324;
@@ -681,11 +713,25 @@ img {
     display: -o-flex;
     display: flex;
     justify-content: space-between;
+    flex-basis: 45px;
+    min-height: 45px;
   }
   .section-body {
     flex-grow: 1;
     padding: 20px;
     overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }     
+    &::-webkit-scrollbar-track {
+      background: #242427;
+    }
+     
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,.2); 
+      border-radius: 5px;
+    }
   }
   .section-name {
     color: #fff;
@@ -715,6 +761,9 @@ img {
   justify-content: space-between;
   align-items: center;
   color: #4e4b61;
+  @media (max-width: $breakpoint-sm) {
+    display: block;
+  }
   .left-block {
     display: -webkit-flex;
     display: -moz-flex;
@@ -729,6 +778,13 @@ img {
     display: -o-flex;
     display: flex;
     text-align: right;
+    @media (max-width: $breakpoint-xs) {
+      display: block;
+      text-align: left;
+      .ml-3 {
+        margin-left: 0 !important;
+      }
+    }
   }
   .page-name {
     text-transform: uppercase;
@@ -751,3 +807,4 @@ img {
 @import 'myAccount';
 @import 'primaryMenu';
 @import 'bottomBar';
+@import 'cardNormal';

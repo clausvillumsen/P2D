@@ -23,6 +23,7 @@
 		@media (max-width: $breakpoint-xs) {
 			padding-left: 15px;
 			padding-right: 15px;
+			font-size: 14px;
 		}
 		& + .link-action {
 			//border-left: 1px solid rgba(0,0,0,.3);
@@ -42,6 +43,9 @@
 		}
 		.name {
 			padding-left: 20px;
+			@media (max-width: $breakpoint-xs) {
+				padding-left: 10px;
+			}
 		}
 		&:hover {
 			text-decoration: none;			

@@ -27,6 +27,10 @@
 }
 .sidebar.minimize + #primaryContent {
   padding-left: $sidebarMiniWidth;
+  @media (max-width: $breakpoint-sm) { 
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 #primaryContent {
   flex-grow: 1;
@@ -40,7 +44,7 @@
   flex-direction: column;
   @media (max-width: $breakpoint-sm) {
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px;    
   }
   .primary-inner {
     padding: 40px;
@@ -57,7 +61,8 @@
     overflow-x: auto;
     width: calc(100vw - 225px);
     &::-webkit-scrollbar {
-      width: 3px;
+      width: 5px;
+      height: 5px;
     }
      
     &::-webkit-scrollbar-track {
@@ -65,7 +70,10 @@
     }
      
     &::-webkit-scrollbar-thumb {
-      background: #242427; 
+      background: #252527; 
+    }
+    @media (max-width: $breakpoint-sm) { 
+      display: block;
     }
   }
 }
@@ -73,6 +81,9 @@
   #primaryContent {
     .primary-inner {
       width: calc(100vw - 70px);
+      @media (max-width: $breakpoint-sm) {
+        width: 100%;
+      }
     }
   }
 }
