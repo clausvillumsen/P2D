@@ -704,7 +704,7 @@ img.align-center {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  padding-left: 200px; }
+  padding-left: 225px; }
   @media (max-width: 767px) {
     #layoutApp {
       padding-left: 0; } }
@@ -721,7 +721,7 @@ img.align-center {
   padding: 0;
   background: #2b2b2b;
   color: #646465;
-  width: 200px;
+  width: 225px;
   position: fixed;
   top: 60px;
   bottom: 0;
@@ -743,17 +743,20 @@ img.align-center {
     display: block; }
   @media (max-width: 767px) {
     .sidebar {
-      -moz-transform: translateX(-200px);
-      -webkit-transform: translateX(-200px);
-      -o-transform: translateX(-200px);
-      -ms-transform: translateX(-200px);
-      transform: translateX(-200px); }
+      -moz-transform: translateX(-225px);
+      -webkit-transform: translateX(-225px);
+      -o-transform: translateX(-225px);
+      -ms-transform: translateX(-225px);
+      transform: translateX(-225px); }
       .sidebar.show {
         -moz-transform: translateX(0);
         -webkit-transform: translateX(0);
         -o-transform: translateX(0);
         -ms-transform: translateX(0);
         transform: translateX(0); } }
+  .sidebar .sidebar__top {
+    padding-top: 15px;
+    flex-grow: 1; }
   .sidebar .sidebar__bottom {
     margin-top: auto; }
   .sidebar .nav-sidebar-bottom {
@@ -762,11 +765,12 @@ img.align-center {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    border-top: 1px solid #343435; }
     .sidebar .nav-sidebar-bottom li {
-      width: 40px;
+      width: 50px;
       text-align: center;
-      height: 40px; }
+      height: 50px; }
     .sidebar .nav-sidebar-bottom a {
       display: -webkit-flex;
       display: -moz-flex;
@@ -774,10 +778,12 @@ img.align-center {
       display: -o-flex;
       display: flex;
       justify-content: center;
-      height: 40px;
+      height: 50px;
       align-items: center; }
       .sidebar .nav-sidebar-bottom a:hover svg {
         fill: #fff; }
+        .sidebar .nav-sidebar-bottom a:hover svg path {
+          fill: #fff; }
       .sidebar .nav-sidebar-bottom a svg {
         height: 18px;
         fill: #9e9e9f; }
@@ -793,7 +799,10 @@ img.align-center {
     padding-bottom: 2px; }
     .sidebar .nav-link .name {
       margin-left: 15px;
-      padding: 7px 15px; }
+      padding: 7px 15px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 13px; }
     .sidebar .nav-link .icon-holder {
       flex-basis: 35px;
       min-width: 35px;
@@ -813,7 +822,8 @@ img.align-center {
       color: #fff; }
   .sidebar .active .nav-link .name {
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.3); }
+    background: #1d1d1d;
+    color: #fff; }
   .sidebar .active .nav-link svg {
     fill: #6877f9; }
 

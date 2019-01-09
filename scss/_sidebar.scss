@@ -37,6 +37,10 @@
 			transform: translateX(0);
 		}
 	}
+	.sidebar__top {
+		padding-top: 15px;
+		flex-grow: 1;
+	}
 	.sidebar__bottom {
 		margin-top: auto;
 	}
@@ -47,10 +51,11 @@
 		display: -o-flex;
 		display: flex;
 		justify-content: space-around;
+		border-top: 1px solid #343435;
 		li {
-			width: 40px;
+			width: 50px;
 			text-align: center;
-			height: 40px;
+			height: 50px;
 			
 		}
 		a {			
@@ -60,11 +65,14 @@
 			display: -o-flex;
 			display: flex;
 			justify-content: center;
-			height: 40px;
+			height: 50px;
 			align-items: center;
 			&:hover {
 				svg {
 					fill: #fff;
+					path {
+						fill: #fff;
+					}
 				}
 			}
 			svg {
@@ -86,6 +94,9 @@
     .name {
       margin-left: 15px;
       padding: 7px 15px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 13px;
     }
     .icon-holder {
     	flex-basis: 35px;
@@ -112,7 +123,8 @@
     .nav-link {
       .name {
         border-radius: 5px;
-        background: rgba(0,0,0,.3);  
+        background: #1d1d1d;  
+        color: #fff;
       }
       svg {
     		fill: $primary-color;
