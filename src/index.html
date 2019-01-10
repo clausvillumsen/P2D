@@ -11,252 +11,51 @@
     <div id="layoutApp" class="minimize">
       <!-- build:section component.sidebar --><!-- /build -->
       <section id="primaryContent">
-        <section class="common__page-name">
-          <div class="left-block">
-            <div class="page-name">
-              DASHBOARD
+        <div class="drap-drop-zone">
+          <div class="ddz__inner">
+            <h1>Drag And Drop Documents</h1>
+            <div class="lead">
+              Je dávno známe, že ak je zrozumiteľný JPG, PNG, PDF na ktorej
             </div>
-            <div class="page-folder">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M572.694 292.093L500.27 416.248A63.997 63.997 0 0 1 444.989 448H45.025c-18.523 0-30.064-20.093-20.731-36.093l72.424-124.155A64 64 0 0 1 152 256h399.964c18.523 0 30.064 20.093 20.73 36.093zM152 224h328v-48c0-26.51-21.49-48-48-48H272l-64-64H48C21.49 64 0 85.49 0 112v278.046l69.077-118.418C86.214 242.25 117.989 224 152 224z"/></svg>
+            <div class="text-white pt-3r pb-3r">
+              OR
+            </div>
+            <div class="input-group mb-3">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">
+                  <svg class="import-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M16 288c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h112v-64H16zm336-152V0H152c-13.3 0-24 10.7-24 24v264h127.99v-65.18c0-14.28 17.29-21.41 27.36-11.27l95.7 96.43c6.6 6.65 6.6 17.39 0 24.04l-95.7 96.42c-10.06 10.14-27.36 3.01-27.36-11.27V352H128v136c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H376c-13.2 0-24-10.8-24-24zm153-31L407.1 7c-4.5-4.5-10.6-7-17-7H384v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"/></svg>
+                  IMPORT DOCUMENTS
+                </label>
+              </div>
+            </div>
+            <a href="#" id="btnCreateReport" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modalCreate" class="link-action">
+              <span class="icon-holder pr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 128H272l-64-64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm-96 168c0 8.84-7.16 16-16 16h-72v72c0 8.84-7.16 16-16 16h-16c-8.84 0-16-7.16-16-16v-72h-72c-8.84 0-16-7.16-16-16v-16c0-8.84 7.16-16 16-16h72v-72c0-8.84 7.16-16 16-16h16c8.84 0 16 7.16 16 16v72h72c8.84 0 16 7.16 16 16v16z"/></svg>
               </span>
-              IDaszf-1204-1234-gfh
-            </div>
-          </div>
-          <div class="right-block">
-            <div class="location">
-              Mosegårdsvej 89, København K
-              <span class="common_icon-muted ml-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512"><path d="M112 316.94v156.69l22.02 33.02c4.75 7.12 15.22 7.12 19.97 0L176 473.63V316.94c-10.39 1.92-21.06 3.06-32 3.06s-21.61-1.14-32-3.06zM144 0C64.47 0 0 64.47 0 144s64.47 144 144 144 144-64.47 144-144S223.53 0 144 0zm0 76c-37.5 0-68 30.5-68 68 0 6.62-5.38 12-12 12s-12-5.38-12-12c0-50.73 41.28-92 92-92 6.62 0 12 5.38 12 12s-5.38 12-12 12z"/></svg>
+              <span class="name">
+                CREATE REPORT
               </span>
-            </div>
-            <div class="ml-3">
-              13:55:32 - 14 Nov 2018   
-              <span class="common_icon-muted ml-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"/></svg>
-              </span>
-            </div>
+            </a>
+
+            <script>
+              (function($){
+                $('#btnCreateReport').hide();
+                $(document).ready(function() {
+                  // for testing
+                  $('#inputGroupFile01').click(function() {
+                    $('#btnCreateReport').show();
+                  })
+                })  
+              })(window.jQuery)
+            </script>
           </div>
-        </section>
-        <div class="alert alert-danger" role="alert">
-          <img src="/images/lens-red.png" height="37" class="pr-2" alt="">
-          On lihtsalt proovitekst, mida kasutatakse printimis
-        </div>
-        <div class="primary-inner">
-          <div class="commont__layout w30">
-            <section class="common__section section-height-50">
-              <div class="section-header">
-                <div class="left-block">
-                  <div class="section-name">
-                  AFTER EVENT
-                  </div>
-                </div>
-                <div class="right-block">
-                  <button class="btn btn-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"/></svg>
-                  </button>
-                </div>
-              </div>
-              <div class="section-image">
-                <img src="https://picsum.photos/700/420/?blur" alt="">
-              </div>
-              <div class="section-body">
-                <div class="text-white">
-                Image_docs.jpg
-                </div>
-              </div>
-            </section>
-            <section class="common__section section-height-50 ml-0">
-              <div class="section-header">
-                <div class="left-block">
-                  <div class="section-name">
-                  GEO LOCATION
-                  </div>
-                </div>
-                <div class="right-block">
-                  <button class="btn btn-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM128 148c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm320 0c0 6.6-5.4 12-12 12H188c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h248c6.6 0 12 5.4 12 12v40z"/></svg>
-                  </button>
-                </div>
-              </div>
-              <div class="section-image">
-                <img src="https://picsum.photos/700/420/?blur" alt="">
-              </div>
-              <div class="section-body">
-                <div class="text-white">
-                  55 deg 29&apos; 58.43&quot;
-                </div>
-              </div>
-            </section>
-          </div>
-          <section class="common__section w30">
-            <div class="section-header">
-              <div class="left-block">
-                <div class="section-name">
-                FINDING DETAILS
-                </div>
-              </div>
-              <div class="right-block">
-                <button class="btn btn-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M571 228.5c-78.1 88.2-179.8 108.8-184.1 109.6-134.8 26.1-153.3 7.5-237.1 37.5-10.6 3.8-21.8-3.6-21.8-14.8V112.5c0-9 7.3-16.4 16.3-16 43.2 2 95.3 13.2 155.2 42.4 140.6 68.5 223.7 62.9 252.9 57.2 18-3.8 31.3 18.1 18.6 32.4zM56 0C25.1 0 0 25.1 0 56c0 22.3 13.2 41.4 32 50.4V504c0 4.4 3.6 8 8 8h32c4.4 0 8-3.6 8-8V106.4c18.8-9 32-28.1 32-50.4 0-30.9-25.1-56-56-56z"/></svg>
-                </button>
-                <button class="btn btn-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm-11.34 240.23c-2.89 4.82-8.1 7.77-13.72 7.77h-.31c-4.24 0-8.31 1.69-11.31 4.69l-5.66 5.66c-3.12 3.12-3.12 8.19 0 11.31l5.66 5.66c3 3 4.69 7.07 4.69 11.31V304c0 8.84-7.16 16-16 16h-6.11c-6.06 0-11.6-3.42-14.31-8.85l-22.62-45.23c-2.44-4.88-8.95-5.94-12.81-2.08l-19.47 19.46c-3 3-7.07 4.69-11.31 4.69H50.81C49.12 277.55 48 266.92 48 256c0-110.28 89.72-200 200-200 21.51 0 42.2 3.51 61.63 9.82l-50.16 38.53c-5.11 3.41-4.63 11.06.86 13.81l10.83 5.41c5.42 2.71 8.84 8.25 8.84 14.31V216c0 4.42-3.58 8-8 8h-3.06c-3.03 0-5.8-1.71-7.15-4.42-1.56-3.12-5.96-3.29-7.76-.3l-17.37 28.95zM408 358.43c0 4.24-1.69 8.31-4.69 11.31l-9.57 9.57c-3 3-7.07 4.69-11.31 4.69h-15.16c-4.24 0-8.31-1.69-11.31-4.69l-13.01-13.01a26.767 26.767 0 0 0-25.42-7.04l-21.27 5.32c-1.27.32-2.57.48-3.88.48h-10.34c-4.24 0-8.31-1.69-11.31-4.69l-11.91-11.91a8.008 8.008 0 0 1-2.34-5.66v-10.2c0-3.27 1.99-6.21 5.03-7.43l39.34-15.74c1.98-.79 3.86-1.82 5.59-3.05l23.71-16.89a7.978 7.978 0 0 1 4.64-1.48h12.09c3.23 0 6.15 1.94 7.39 4.93l5.35 12.85a4 4 0 0 0 3.69 2.46h3.8c1.78 0 3.35-1.18 3.84-2.88l4.2-14.47c.5-1.71 2.06-2.88 3.84-2.88h6.06c2.21 0 4 1.79 4 4v12.93c0 2.12.84 4.16 2.34 5.66l11.91 11.91c3 3 4.69 7.07 4.69 11.31v24.6z"/></svg>
-                </button>
-              </div>
-            </div>
-            <div class="section-body nopadding">
-              <table class="table text-white">
-                <tbody>
-                  <tr>
-                    <td>
-                      <img src="images/lens-red.png" width="23" alt="">
-                    </td>
-                    <td>
-                      <div class="text-danger font-weight-500">On lihtsalt proovitekst, mida</div>
-                      <div>kasutatakse printimis</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/lens-red.png" width="23" alt=""></td>
-                    <td>
-                      <div class="text-danger font-weight-500">Editing software</div>
-                      <table>
-                        <tr>
-                          <td>Taken day</td>
-                          <td>25 Dec 2017</td>
-                        </tr>
-                        <tr>
-                          <td>Camera</td>
-                          <td>Apple</td>
-                        </tr>
-                        <tr>
-                          <td>Software</td>
-                          <td>Adobe photoshop CC 2018 (windows) </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/lens-yellow.png" width="23" alt=""></td>
-                    <td>
-                      <div class="text-warning">
-                        Open source hit
-                      </div>
-                      <div class="tex-white">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      </div>
-                      <div class="text-ellipse">
-                        <a href="">https://timeandtidewatc.timeandtidewatc.timeandtidewatc.timeandtidewatc</a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/lens-yellow.png" width="23" alt=""></td>
-                    <td>
-                      <div class="text-warning">
-                        Open source hit
-                      </div>
-                      <div class="tex-white">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      </div>
-                      <div class="text-ellipse">
-                        <a href="">https://timeandtidewatc.timeandtidewatc.timeandtidewatc.timeandtidewatc</a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/lens-yellow.png" width="23" alt=""></td>
-                    <td>
-                      <div class="text-warning">
-                        Open source hit
-                      </div>
-                      <div class="tex-white">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/lens-yellow.png" width="23" alt=""></td>
-                    <td>
-                      <div class="text-warning">
-                        Open source hit
-                      </div>
-                      <div class="tex-white">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-          <section class="common__section w30">
-            <div class="section-header">
-              <div class="left-block">
-                <div class="section-name">
-                META DATA
-                </div>
-              </div>
-              <div class="right-block">
-                <button class="btn btn-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zm-64 47.111C384 109.929 370.071 96 352.889 96H220.667c-12.887 0-23.333 10.447-23.333 23.334v14.904c0 13.138 10.843 23.686 23.976 23.324l56.002-1.588L69.908 361.908c-7.858 7.802-7.88 20.504-.05 28.334l19.899 19.899c7.83 7.83 20.532 7.808 28.334-.05l205.935-207.404-1.588 56.003c-.362 13.133 10.186 23.976 23.324 23.976h14.904c12.887 0 23.334-10.447 23.334-23.333V127.111z"/></svg>
-                </button>
-              </div>
-            </div>
-            <div class="section-body nopadding">
-              <table class="table text-muted">
-                <tbody>
-                  <tr>
-                    <td>Make</td>
-                    <td>Apple</td>
-                  </tr>
-                  <tr>
-                    <td>Camera model</td>
-                    <td>Iphone 8 Plus</td>
-                  </tr>
-                  <tr>
-                    <td>Software</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus debitis dolorum corrupti</td>
-                  </tr>
-                  <tr>
-                    <td>Make</td>
-                    <td>Apple</td>
-                  </tr>
-                  <tr>
-                    <td>Camera model</td>
-                    <td>Iphone 8 Plus</td>
-                  </tr>
-                  <tr>
-                    <td>Software</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus debitis dolorum corrupti</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </div>
+        </div>        
       </section>
     </div>
   </div> <!-- master-inner -->
 </div>  <!-- master -->
 
-<div id="bottomBar">
-  <a href="" class="link-action">
-    <span class="icon-holder">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-153 31V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 160v48c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8z"/></svg>
-    </span>
-    <span class="name">
-    ADD TO REPORT
-    </span>
-  </a>
-  <a data-toggle="modal" data-target="#modalCreate" class="link-action">
-    <span class="icon-holder">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.333 512"><path d="M440.935 12.574l3.966 82.766C399.416 41.904 331.674 8 256 8 134.813 8 33.933 94.924 12.296 209.824 10.908 217.193 16.604 224 24.103 224h49.084c5.57 0 10.377-3.842 11.676-9.259C103.407 137.408 172.931 80 256 80c60.893 0 114.512 30.856 146.104 77.801l-101.53-4.865c-6.845-.328-12.574 5.133-12.574 11.986v47.411c0 6.627 5.373 12 12 12h200.333c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12h-47.411c-6.853 0-12.315 5.729-11.987 12.574zM256 432c-60.895 0-114.517-30.858-146.109-77.805l101.868 4.871c6.845.327 12.573-5.134 12.573-11.986v-47.412c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12V500c0 6.627 5.373 12 12 12h47.385c6.863 0 12.328-5.745 11.985-12.599l-4.129-82.575C112.725 470.166 180.405 504 256 504c121.187 0 222.067-86.924 243.704-201.824 1.388-7.369-4.308-14.176-11.807-14.176h-49.084c-5.57 0-10.377 3.842-11.676 9.259C408.593 374.592 339.069 432 256 432z"/></svg>
-    </span>
-    <span class="name">
-    REFRESH
-    </span>
-  </a>
-</div>
+
+
 <!-- build:section layout.footer --><!-- /build -->

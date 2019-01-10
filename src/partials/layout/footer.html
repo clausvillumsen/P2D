@@ -1,2 +1,341 @@
+
+<!-- === CREATE POPUP === -->
+<div id="modalCreate" class="modal modal-dark fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">CREATED REPORT</div>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Case number</label>
+            <input type="text" class="form-control is-invalid" aria-describedby="" />
+            <div class="invalid-feedback">
+              Please fill in report case number
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">Event type</label>
+            <select class="custom-select">
+              <option selected>Car accident</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Location</label>
+            <input type="text" class="form-control" aria-describedby="" value="Mosegårdsvej 89, København K" />
+          </div>
+          <hr>
+          <div class="form-group">
+            <label for="">Time of event</label>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Event time was not the same day</label>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">From</label>
+                  <select class="custom-select">
+                    <option selected>2018/12/22</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">To</label>
+                  <select disabled class="custom-select">
+                    <option selected>2018/12/22</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- row -->
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">Starting time</label>
+                  <select class="custom-select">
+                    <option value="1">00:00:00</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">Ending time</label>
+                  <select class="custom-select">
+                    <option value="1">00:00:00</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- row -->
+          </div><!-- container-fluid -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <a href="/dashboard.html" class="btn btn-block btn-lg btn-primary">Create</a>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- row -->
+        </div><!-- container-fluid -->
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modalCreate -->
+
+<!-- === REPORT POPUP === -->
+<div id="modalReport" class="modal modal-dark fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">CASE OF REPORT</div>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Case number</label>
+            <input type="text" class="form-control" aria-describedby="" />
+          </div>
+          <div class="form-group">
+            <label for="">Event type</label>
+            <select class="custom-select">
+              <option selected>Car accident</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <a href="/dashboard.html" class="btn btn-block btn-lg btn-primary">UPDATE</a>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">CANCEL</button>
+            </div>
+          </div><!-- row -->
+        </div><!-- container-fluid -->
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modalReport -->
+
+<!-- === LOCATION POPUP === -->
+<div id="modalLocation" class="modal modal-dark fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">default location</div>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Location</label>
+            <input type="text" class="form-control" aria-describedby="" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <a href="/dashboard.html" class="btn btn-block btn-lg btn-primary">UPDATE</a>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">CANCEL</button>
+            </div>
+          </div><!-- row -->
+        </div><!-- container-fluid -->
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modalLocation -->
+
+<!-- === TIME POPUP === -->
+<div id="modalTime" class="modal modal-dark fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">TIME OF EVENT</div>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Time of event</label>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Event time was not the same day</label>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">From</label>
+                  <select class="custom-select">
+                    <option selected>2018/12/22</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">To</label>
+                  <select disabled class="custom-select">
+                    <option selected>2018/12/22</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- row -->
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">Starting time</label>
+                  <select class="custom-select">
+                    <option value="1">00:00:00</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">Ending time</label>
+                  <select class="custom-select">
+                    <option value="1">00:00:00</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- row -->
+          </div><!-- container-fluid -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <a href="/dashboard.html" class="btn btn-block btn-lg btn-primary">UPDATE</a>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">CANCEL</button>
+            </div>
+          </div><!-- row -->
+        </div><!-- container-fluid -->
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modalTime -->
+
+<!-- === RAIL POPUP === -->
+<div id="modalRight" class="modal modal-dark fixed-right fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">TIME OF EVENT</div>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Time of event</label>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Event time was not the same day</label>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">From</label>
+                  <select class="custom-select">
+                    <option selected>2018/12/22</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">To</label>
+                  <select disabled class="custom-select">
+                    <option selected>2018/12/22</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- row -->
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">Starting time</label>
+                  <select class="custom-select">
+                    <option value="1">00:00:00</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="">Ending time</label>
+                  <select class="custom-select">
+                    <option value="1">00:00:00</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div><!-- row -->
+          </div><!-- container-fluid -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <a href="/dashboard.html" class="btn btn-block btn-lg btn-primary">UPDATE</a>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">CANCEL</button>
+            </div>
+          </div><!-- row -->
+        </div><!-- container-fluid -->
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modalTime -->
+
 </body>
 </html>
