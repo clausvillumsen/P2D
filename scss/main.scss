@@ -539,8 +539,10 @@ img {
     }
     &:checked
     ~ .custom-control-label::before {
-      background: $primary-color;
-      border: none;
+      background: transparent;
+    }
+    &:checked ~ .custom-control-label::after { 
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSIjNGVjZTNkIiBkPSJNNDEzLjUwNSA5MS45NTFMMTMzLjQ5IDM3MS45NjZsLTk4Ljk5NS05OC45OTVjLTQuNjg2LTQuNjg2LTEyLjI4NC00LjY4Ni0xNi45NzEgMEw2LjIxMSAyODQuMjg0Yy00LjY4NiA0LjY4Ni00LjY4NiAxMi4yODQgMCAxNi45NzFsMTE4Ljc5NCAxMTguNzk0YzQuNjg2IDQuNjg2IDEyLjI4NCA0LjY4NiAxNi45NzEgMGwyOTkuODEzLTI5OS44MTNjNC42ODYtNC42ODYgNC42ODYtMTIuMjg0IDAtMTYuOTcxbC0xMS4zMTQtMTEuMzE0Yy00LjY4Ni00LjY4Ni0xMi4yODQtNC42ODYtMTYuOTcgMHoiLz48L3N2Zz4=");
     }
     &:focus ~ .custom-control-label::before {
       box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba($primary-color, 0.3);
@@ -610,11 +612,16 @@ img {
 .text-secondary {color: $secondary-color !important;}
 .text-success { color: $green !important; }
 .text-danger { color: $red !important; }
-.text-warning { color: $orange !important; }
-.text-info { color: $cyan !important; }
+.text-warning { color: #faca00 !important; }
+.text-info { color: #2ccdef !important; }
 .text-body { color: $primary-text-color !important; }
 .text-white {color: #fff !important;}
 .text-muted { color: $muted !important; }
+.text-ellipse {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 /* OVERRIDE BOOTSTRAP -------------------------------------------- */
 
 /* EXTENDS */

@@ -29,6 +29,9 @@ module.exports = function(grunt) {
             sidebar: '<%= partialPath %>component/sidebar.html',
             bottom_bar: '<%= partialPath %>component/bottom_bar.html',
             card_normal: '<%= partialPath %>component/card_normal.html',
+            card_red: '<%= partialPath %>component/card_red.html',
+            card_yellow: '<%= partialPath %>component/card_yellow.html',
+            card_green: '<%= partialPath %>component/card_green.html',
             common_header: '<%= partialPath %>component/common_header.html'
           },
           layout: {
