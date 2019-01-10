@@ -519,17 +519,28 @@ img {
 }
 // Select
 .custom-select {
+  border-radius: 2px;
   &:focus {
     border-color: $primary-color;
-    box-shadow: 0 0 0 0.2rem rgba($primary-color,.5);
+    box-shadow: none;
   }
 }
 // Checkbox
 .custom-checkbox {
+  .custom-control-label {
+    margin-bottom: 0;
+    padding-top: 4px;
+  }
   .custom-control-input {
+    ~ .custom-control-label::before {
+      border-radius: 2px;
+      border-color: #3e3e3f;
+      background: transparent;
+    }
     &:checked
     ~ .custom-control-label::before {
       background: $primary-color;
+      border: none;
     }
     &:focus ~ .custom-control-label::before {
       box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba($primary-color, 0.3);
@@ -808,3 +819,5 @@ img {
 @import 'primaryMenu';
 @import 'bottomBar';
 @import 'cardNormal';
+@import 'modal';
+@import 'form';

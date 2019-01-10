@@ -100,10 +100,10 @@ input[type="email"] {
   -moz-appearance: none;
   display: block;
   width: 100%;
-  padding: .5rem .75rem;
+  padding: .1rem .75rem;
   font-size: 1rem;
   line-height: 1.25;
-  border-radius: .25rem;
+  border-radius: 2px;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
 
 input[type="text"],
@@ -435,14 +435,14 @@ img.align-center {
       background-color: #e6590c;
       border-color: #e6590c; }
   .btn.bnt-danger {
-    background-color: #e41919;
-    border-color: #e41919; }
+    background-color: #e22228;
+    border-color: #e22228; }
     .btn.bnt-danger:hover, .btn.bnt-danger:focus, .btn.bnt-danger:active {
-      background-color: #cd1616;
-      border-color: #cd1616; }
+      background-color: #cf1b21;
+      border-color: #cf1b21; }
     .btn.bnt-danger:focus:active {
-      background-color: #b61414;
-      border-color: #b61414; }
+      background-color: #b9181d;
+      border-color: #b9181d; }
   .btn.btn-primary {
     background-color: #6877f9;
     border-color: #6877f9; }
@@ -493,7 +493,7 @@ img.align-center {
   box-shadow: none; }
 
 .form-control.is-invalid:focus {
-  border-color: #e41919; }
+  border-color: #e22228; }
 
 .custom-control-input:checked ~ .custom-control-indicator {
   background-color: #6877f9; }
@@ -539,12 +539,24 @@ img.align-center {
       .navbar-brand img {
         height: 25px; } }
 
-.custom-select:focus {
-  border-color: #6877f9;
-  box-shadow: 0 0 0 0.2rem rgba(104, 119, 249, 0.5); }
+.custom-select {
+  border-radius: 2px; }
+  .custom-select:focus {
+    border-color: #6877f9;
+    box-shadow: none; }
+
+.custom-checkbox .custom-control-label {
+  margin-bottom: 0;
+  padding-top: 4px; }
+
+.custom-checkbox .custom-control-input ~ .custom-control-label::before {
+  border-radius: 2px;
+  border-color: #3e3e3f;
+  background: transparent; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background: #6877f9; }
+  background: #6877f9;
+  border: none; }
 
 .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(104, 119, 249, 0.3); }
@@ -591,7 +603,7 @@ img.align-center {
   background-color: #65B044 !important; }
 
 .bg-danger {
-  background-color: #e41919 !important; }
+  background-color: #e22228 !important; }
 
 .bg-warning {
   background-color: #f5a623 !important; }
@@ -609,7 +621,7 @@ img.align-center {
   background-color: #43a5de !important; }
 
 .bg-red {
-  background-color: #e41919 !important; }
+  background-color: #e22228 !important; }
 
 .bg-green {
   background-color: #65B044 !important; }
@@ -633,7 +645,7 @@ img.align-center {
   color: #65B044 !important; }
 
 .text-danger {
-  color: #e41919 !important; }
+  color: #e22228 !important; }
 
 .text-warning {
   color: #f47631 !important; }
@@ -1105,6 +1117,7 @@ img.align-center {
   justify-content: center;
   border-radius: 4px 4px 0 0; }
   #bottomBar .link-action {
+    cursor: pointer;
     box-shadow: -1px 1px 3px 0 rgba(0, 0, 0, 0.25);
     background: #1a1a1d;
     text-transform: uppercase;
@@ -1177,3 +1190,57 @@ img.align-center {
   @media (max-width: 600px) {
     .card-group-normal .card-normal {
       flex: 0 0 48%; } }
+
+.modal.modal-dark .modal-dialog {
+  background: #2b2b2c;
+  box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  border: none; }
+
+.modal.modal-dark .modal-content {
+  border: none; }
+
+.modal.modal-dark .modal-header {
+  background: #1e1e1f;
+  color: #cacaca;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 4px 4px 0 0;
+  border: none;
+  padding: 13px 25px; }
+  .modal.modal-dark .modal-header .close {
+    padding: 13px;
+    color: #cacaca; }
+
+.modal.modal-dark .modal-body {
+  border-left: 1px solid #3e3e3f;
+  background: #2b2b2b;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.modal.modal-dark .modal-footer {
+  border-top: none;
+  border-left: 1px solid #3e3e3f;
+  border-bottom: 1px solid #3e3e3f;
+  background: #2b2b2b;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 45px; }
+  .modal.modal-dark .modal-footer .btn {
+    text-transform: uppercase; }
+
+.modal.modal-dark .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+.modal.modal-dark hr {
+  border-bottom: none;
+  border-top-color: #3e3e3f;
+  margin: 30px -25px; }
+
+.form-group label {
+  color: #ecf5fd;
+  font-size: 13px;
+  margin-bottom: .7rem; }
