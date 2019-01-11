@@ -488,12 +488,17 @@ img.align-center {
     padding-top: 10px;
     padding-bottom: 10px; }
 
-.form-control:focus {
-  border-color: #6877f9;
-  box-shadow: none; }
-
-.form-control.is-invalid:focus {
-  border-color: #e22228; }
+.form-control {
+  border-color: #3d3d3e;
+  background: #333;
+  color: #fff; }
+  .form-control:focus {
+    border-color: #6877f9;
+    box-shadow: none;
+    background: #333;
+    color: #fff; }
+  .form-control.is-invalid:focus {
+    border-color: #e22228; }
 
 .custom-control-input:checked ~ .custom-control-indicator {
   background-color: #6877f9; }
@@ -776,7 +781,7 @@ img.align-center {
   flex-basis: 30.33%;
   min-width: 30.33%; }
 
-.commont__layout {
+.common__layout {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -784,7 +789,7 @@ img.align-center {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .commont__layout + .common__section {
+  .common__layout + .common__section {
     margin-left: 4%; }
 
 .common__section {
@@ -798,7 +803,7 @@ img.align-center {
   box-shadow: -1px -1px 3px 0 rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   align-self: stretch; }
-  .common__section + .common__section {
+  .common__section.ml-4 {
     margin-left: 4%; }
   @media (max-width: 767px) {
     .common__section {
@@ -1325,3 +1330,32 @@ img.align-center {
   color: #ecf5fd;
   font-size: 13px;
   margin-bottom: .7rem; }
+
+#twoColumntwoRow {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  #twoColumntwoRow .an-row {
+    min-width: 48%;
+    flex-basis: 48%;
+    margin-bottom: 30px; }
+    #twoColumntwoRow .an-row .common__section {
+      height: 272px; }
+
+#twoColumn {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between; }
+  #twoColumn .common__section {
+    min-width: 48%;
+    flex-basis: 48%; }
+    #twoColumn .common__section .section-image {
+      height: 165px;
+      overflow: hidden; }

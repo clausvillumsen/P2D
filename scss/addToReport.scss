@@ -1,0 +1,35 @@
+$heightColumn: 272px;
+
+#twoColumntwoRow {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.an-row {
+		min-width: 48%;
+		flex-basis: 48%;
+		margin-bottom: 30px;
+		.common__section {
+			height: $heightColumn;
+		}
+	}
+}
+#twoColumn {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	.common__section {
+		min-width: 48%;
+		flex-basis: 48%;
+		.section-image {
+			height: 165px;
+			overflow: hidden;
+		}
+	}
+}

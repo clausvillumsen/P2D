@@ -452,9 +452,14 @@ img {
 }
 // Input
 .form-control {
+  border-color: #3d3d3e;
+  background: #333;
+  color: #fff;
   &:focus {
     border-color: $primary-color;
     box-shadow: none;
+    background: #333;
+    color: #fff;
   }
   &.is-invalid {
     &:focus {
@@ -745,7 +750,7 @@ img {
   flex-basis: 30.33%;
   min-width: 30.33%; 
 }
-.commont__layout {
+.common__layout {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -769,7 +774,7 @@ img {
   box-shadow: -1px -1px 3px 0 rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   align-self: stretch;
-  + .common__section {
+  &.ml-4 {
     margin-left: 4%;
   }
   @media (max-width: $breakpoint-sm) {
@@ -913,3 +918,4 @@ img {
 @import 'cardNormal';
 @import 'modal';
 @import 'form';
+@import 'addToReport';
