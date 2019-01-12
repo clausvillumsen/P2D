@@ -321,6 +321,7 @@ img {
     padding-left: 0;
     padding-right: 0;
     color: $primary-color;
+    box-shadow: none;
   }
   &.btn-rounded {
     border-radius: 999em;  
@@ -415,6 +416,9 @@ img {
       background-color: $primary-color;
       border-color: $primary-color;    
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+      svg {
+        fill: #fff;
+      }
     }  
     &:not(:disabled):not(.disabled):active:focus {
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
@@ -577,6 +581,13 @@ img {
   font-weight: 500;
   min-height: 18px;
   border-radius: 2px;
+  &.badge-pill {
+    border-radius: 10rem;
+  }
+  &.badge-primary {
+    background-color: $primary-color;
+    font-size: 15px;
+  }
   &.badge-warning {
     color: #fff;
     background: #f5a623;
@@ -869,6 +880,9 @@ img {
   justify-content: space-between;
   align-items: center;
   color: #4e4b61;
+  a {
+    color: #4e4b61;
+  }
   @media (max-width: $breakpoint-sm) {
     display: block;
   }
@@ -909,6 +923,21 @@ img {
     }
   }
 }
+.custom-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }     
+  &::-webkit-scrollbar-track {
+    background: #242427;
+  }
+   
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.2); 
+    border-radius: 5px;
+  }
+}
+
 
 @import 'layout';
 @import 'sidebar';
@@ -919,3 +948,5 @@ img {
 @import 'modal';
 @import 'form';
 @import 'addToReport';
+@import 'editPhoto';
+@import 'cardPhoto';

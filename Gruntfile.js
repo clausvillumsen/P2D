@@ -34,6 +34,8 @@ module.exports = function(grunt) {
             card_green: '<%= partialPath %>component/card_green.html',
             toolbar: '<%= partialPath %>component/toolbar.html',
             folder: '<%= partialPath %>component/folder.html',
+            edit_photo: '<%= partialPath %>component/edit_photo.html',
+            match_popup: '<%= partialPath %>component/match_popup.html',
             common_header: '<%= partialPath %>component/common_header.html'
           },
           layout: {

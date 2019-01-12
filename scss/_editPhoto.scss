@@ -1,0 +1,41 @@
+.figure-edit-photo {
+  .caption {
+    text-align: left;
+    color: #fff;
+    padding-bottom: 16px;
+    display: block;
+  }
+  .img-holder {
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: 25px;
+  }
+}
+.nav-edit-control {
+  display: flex;
+  .btn {
+    flex-grow: 1;
+    background-color: #131313;
+    border-color: #131313;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &:first-child {
+      border-top-left-radius: 888em;
+      border-bottom-left-radius: 888em;
+    }
+    &:last-child {
+      border-top-right-radius: 888em;
+      border-bottom-right-radius: 888em;
+      border-left-color: #3d3d3d;
+    }
+  }
+}
+#formCommit {
+  background: #333;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding: 25px;
+  .form-control {
+    border: none;
+  }
+}
