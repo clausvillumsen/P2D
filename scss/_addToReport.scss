@@ -1,4 +1,4 @@
-$heightColumn: 270px;
+$heightColumn: 32vh;
 
 #twoColumntwoRow {
 	display: -webkit-flex;
@@ -8,12 +8,21 @@ $heightColumn: 270px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	@media (max-width: $breakpoint-ipad) {
+		display: block;
+	}
 	.an-row {
 		min-width: 48%;
 		flex-basis: 48%;
 		margin-bottom: 30px;
+		@media (max-width: $breakpoint-ipad) { 
+			margin-bottom: 0;
+		}
 		.common__section {
 			height: $heightColumn;
+			@media (max-width: $breakpoint-ipad) { 
+				height: auto;
+			}
 		}
 	}
 }
@@ -28,8 +37,11 @@ $heightColumn: 270px;
 		min-width: 48%;
 		flex-basis: 48%;
 		.section-image {
-			height: 165px;
+			height: 12.5vw;
 			overflow: hidden;
+			@media (max-width: $breakpoint-ipad) { 
+				height: 25vw;
+			}
 		}
 	}
 }

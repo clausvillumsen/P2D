@@ -201,7 +201,7 @@
                                 </div>
                             </div>
                             <div class="section-body">
-                                <section class="card-deck card-group-normal">
+                                <section class="card-group-normal">
                                     <div class="card card-normal text-white bg-dark">
                                         <div class="card-header">
                                             <span class="icon-lens">
@@ -620,7 +620,7 @@
                 ADD TO REPORT
             </span>
         </a>
-        <a data-toggle="modal" data-target="#modalCreate" class="link-action">
+        <a class="link-action">
             <span class="icon-holder">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                     <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" /></svg>
@@ -629,7 +629,7 @@
                 MAP
             </span>
         </a>
-        <a data-toggle="modal" data-target="#modalCreate" class="link-action">
+        <a data-toggle="modal" data-target="#modalRefresh" class="link-action">
             <span class="icon-holder">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.333 512">
                     <path d="M440.935 12.574l3.966 82.766C399.416 41.904 331.674 8 256 8 134.813 8 33.933 94.924 12.296 209.824 10.908 217.193 16.604 224 24.103 224h49.084c5.57 0 10.377-3.842 11.676-9.259C103.407 137.408 172.931 80 256 80c60.893 0 114.512 30.856 146.104 77.801l-101.53-4.865c-6.845-.328-12.574 5.133-12.574 11.986v47.411c0 6.627 5.373 12 12 12h200.333c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12h-47.411c-6.853 0-12.315 5.729-11.987 12.574zM256 432c-60.895 0-114.517-30.858-146.109-77.805l101.868 4.871c6.845.327 12.573-5.134 12.573-11.986v-47.412c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12V500c0 6.627 5.373 12 12 12h47.385c6.863 0 12.328-5.745 11.985-12.599l-4.129-82.575C112.725 470.166 180.405 504 256 504c121.187 0 222.067-86.924 243.704-201.824 1.388-7.369-4.308-14.176-11.807-14.176h-49.084c-5.57 0-10.377 3.842-11.676 9.259C408.593 374.592 339.069 432 256 432z" /></svg>
@@ -639,109 +639,6 @@
             </span>
         </a>
     </div>
-
-    <!-- === CREATE POPUP === -->
-    <div id="modalCreate" class="modal modal-dark fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title">Modal title</div>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="form-group">
-                            <label for="">Case number</label>
-                            <input type="text" class="form-control is-invalid" aria-describedby="" />
-                            <div class="invalid-feedback">
-                                Please fill in report case number
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Event type</label>
-                            <select class="custom-select">
-                                <option selected>Car accident</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Location</label>
-                            <input type="text" class="form-control" aria-describedby="" value="Mosegårdsvej 89, København K" />
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <label for="">Time of event</label>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Event time was not the same day</label>
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">From</label>
-                                        <select class="custom-select">
-                                            <option selected>2018/12/22</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">To</label>
-                                        <select disabled class="custom-select">
-                                            <option selected>2018/12/22</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div><!-- row -->
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Starting time</label>
-                                        <select class="custom-select">
-                                            <option value="1">00:00:00</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Ending time</label>
-                                        <select class="custom-select">
-                                            <option value="1">00:00:00</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div><!-- row -->
-                        </div><!-- container-fluid -->
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6">
-                                <button type="button" class="btn btn-block btn-lg btn-primary">Create</button>
-                            </div>
-                            <div class="col-6">
-                                <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div><!-- row -->
-                    </div><!-- container-fluid -->
-                </div>
-            </div><!-- modal-content -->
-        </div><!-- modal-dialog -->
-    </div><!-- modalCreate -->
 
 
     <!-- === CREATE POPUP === -->
@@ -1000,80 +897,30 @@
         </div><!-- modal-dialog -->
     </div><!-- modalTime -->
 
-    <!-- === RAIL POPUP === -->
-    <div id="modalRight" class="modal modal-dark fixed-right fade" tabindex="-1" role="dialog">
+
+    <!-- === REFRESH POPUP === -->
+    <div id="modalRefresh" class="modal modal-dark fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <div class="modal-title">TIME OF EVENT</div>
+                    <div class="modal-title"></div>
                 </div>
                 <div class="modal-body">
-                    <form action="">
-                        <div class="form-group">
-                            <label for="">Time of event</label>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Event time was not the same day</label>
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">From</label>
-                                        <select class="custom-select">
-                                            <option selected>2018/12/22</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">To</label>
-                                        <select disabled class="custom-select">
-                                            <option selected>2018/12/22</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div><!-- row -->
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Starting time</label>
-                                        <select class="custom-select">
-                                            <option value="1">00:00:00</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Ending time</label>
-                                        <select class="custom-select">
-                                            <option value="1">00:00:00</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div><!-- row -->
-                        </div><!-- container-fluid -->
-                    </form>
+                    The dashboard workspace will be refreshed. Please make sure the necessary documentation has been added to the report.
                 </div>
                 <div class="modal-footer">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-6">
-                                <a href="/dashboard.html" class="btn btn-block btn-lg btn-primary">UPDATE</a>
+                            <div class="col-9">
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Understood, do not show this again</label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">CANCEL</button>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">OK</button>
                             </div>
                         </div><!-- row -->
                     </div><!-- container-fluid -->
@@ -1081,6 +928,7 @@
             </div><!-- modal-content -->
         </div><!-- modal-dialog -->
     </div><!-- modalTime -->
+
 
 </body>
 

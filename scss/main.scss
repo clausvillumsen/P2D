@@ -25,7 +25,7 @@ html {
   }
 }
 body {
-  background: #2b2b2c;
+  background: #35353a;
   color: $primary-text-color;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
@@ -455,10 +455,18 @@ img {
   }
 }
 // Input
+textarea.form-control {
+  padding: 20px;
+  color: #545455;
+  &:focus {
+    color: #545455;
+  }
+}
 .form-control {
   border-color: #3e3e3f;
   background-color: #333;
   color: #fff;
+
   &:focus {
     border-color: $primary-color;
     box-shadow: none;
@@ -615,7 +623,12 @@ img {
 .bg-warning { background-color: $yellow !important; }
 .bg-info { background-color: $cyan !important; }
 .bg-light { background-color: $gray !important; }
-.bg-dark { background-color: #2b2b2b !important; }
+.bg-dark { 
+  background-color: #101212 !important; 
+  &.card-normal {
+    background-color: #2b2b2c !important;
+  }
+}
 // ... and my custom background
 .bg-blue { background-color: $blue !important; }
 .bg-red { background-color: $red !important; }
@@ -644,6 +657,10 @@ img {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 40px;
+  @media (max-width: $breakpoint-ipad) {
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
   &.alert-danger {
     background: #d73044;  
     border: none;
@@ -751,10 +768,20 @@ img {
     flex-grow: 0;
   }
 }
+.w100 {
+  width: 98%;
+  flex-basis: 98%;
+  min-width: 98%;
+}
 .w50 {
   width: 48%;
   flex-basis: 48%;
   min-width: 48%;
+  @media (max-width: $breakpoint-ipad) {
+    width: 100%;
+    flex-basis: 100%;
+    min-width: 100%;
+  }
 }
 .w30 {
   width: 30.33%;
@@ -784,20 +811,23 @@ img {
   background: #252527;
   box-shadow: -1px -1px 3px 0 rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  align-self: stretch;
-  &.ml-4 {
+  align-self: stretch;  
+  &.ml-4p {
     margin-left: 4%;
+    @media (max-width: $breakpoint-ipad) {
+      margin-left: 0;
+    }
   }
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: $breakpoint-ipad) {
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .section-header {
     border-radius: 4px 4px 0 0;
     background: #232324;
-    border-bottom: 1px solid #1e1e1e;
-    border-top: 1px solid #3e3e3f;
+    border: 1px solid #3e3e3f;
+    border-bottom: 1px solid #1e1e1e;    
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -811,6 +841,10 @@ img {
     flex-grow: 1;
     padding: 20px;
     overflow-y: auto;
+    border-left: 1px solid #3e3e3f;
+    border-right: 1px solid #3e3e3f;
+    border-bottom: 1px solid #3e3e3f;
+    border-radius: 0 0 4px 4px;
     &.nopadding {
       padding-left: 0;
       padding-right: 0;
@@ -883,8 +917,12 @@ img {
   a {
     color: #4e4b61;
   }
-  @media (max-width: $breakpoint-sm) {
+  @media (max-width: $breakpoint-ipad) {
     display: block;
+  }
+  @media (max-width: $breakpoint-sm) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .left-block {
     display: -webkit-flex;
@@ -892,6 +930,9 @@ img {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    @media (max-width: $breakpoint-xs) {
+      display: block;
+    }
   }
   .right-block {
     display: -webkit-flex;
@@ -937,7 +978,38 @@ img {
     border-radius: 5px;
   }
 }
-
+#informationPreview {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  @media (max-width: $breakpoint-ipad) {
+    padding: 20px;
+  }
+  + .primary-inner {
+    margin-bottom: 0 !important;
+  }
+}
+.location-nav,
+.date-nav {
+  @media (max-width: $breakpoint-ipad) {
+    a {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      .common_icon-muted {
+        order: 1;
+        margin-right: 10px;
+        margin-left: 0 !important;
+      }
+      .name {
+        order: 2;
+        margin-left: 0 !important;
+      }
+    }
+  }  
+}
 
 @import 'layout';
 @import 'sidebar';

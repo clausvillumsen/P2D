@@ -1,19 +1,21 @@
 .sidebar {  
   z-index: 100;
   padding: 0;
-  background: #2b2b2b;
+  background: #2b2b2c;
   color: #646465;  
 	width: $sidebarWidth;
 	position: fixed;
 	top: $headerHeight;
 	bottom: 0;
 	left: 0;
+	border-right: 1px solid #3e3e3f;
 	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
 	-webkit-transition: all .1s ease-in-out;
 	-moz-transition: all .1s ease-in-out;
@@ -42,7 +44,10 @@
 		flex-grow: 1;
 	}
 	.sidebar__bottom {
-		margin-top: auto;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
 	}
 	.nav-sidebar-bottom {
 		display: -webkit-flex;
@@ -134,6 +139,9 @@
 }
 .sidebar.minimize {
 	width: $sidebarMiniWidth;
+	@media (max-width: $breakpoint-sm) {
+		width: $sidebarWidth;
+	}
 	.nav-link {
 		padding-top: 10px;
     padding-bottom: 10px;
@@ -145,6 +153,9 @@
     }
 		.name {
 			display: none;
+			@media (max-width: $breakpoint-sm) {
+				display: block;
+			}
 		}
 	} 
 }

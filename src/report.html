@@ -21,7 +21,7 @@
           <!-- build:section component.toolbar --><!-- /build -->
         </section>
         <div class="primary-inner">
-          <section class="common__section w50">
+          <section id="sectionOrganize" class="common__section w50">
             <div class="section-header">
               <div class="left-block">
                 <div class="section-name">
@@ -29,16 +29,27 @@
                 </div>
               </div>
               <div class="right-block">
-                <button class="btn btn-icon">
+                <button class="btn btn-icon d-sm-none" id="testToggleClass">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 56v95.005c0 21.382-25.851 32.09-40.971 16.971l-27.704-27.704-107.242 107.243c-4.686 4.686-12.284 4.686-16.971 0l-22.627-22.627c-4.686-4.686-4.686-12.284 0-16.971l107.243-107.243-27.704-27.704C296.905 57.851 307.613 32 328.995 32H424c13.255 0 24 10.745 24 24zM175.917 264.485L68.674 371.728 40.97 344.024C25.851 328.905 0 339.613 0 360.995V456c0 13.255 10.745 24 24 24h95.005c21.382 0 32.09-25.851 16.971-40.971l-27.704-27.704 107.243-107.243c4.686-4.686 4.686-12.284 0-16.971l-22.627-22.627c-4.687-4.685-12.285-4.685-16.971.001z"/></svg>
                 </button>
                 <button class="btn btn-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M192 256c0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32 32 14.3 32 32zm88-32c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm-240 0c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"/></svg>
                 </button>
+                <script>
+                  (function($){
+                    $(document).ready(function() {
+                      $('#testToggleClass').click(function() {                        
+                        $(this).toggleClass('expanded');
+                        $('#sectionOrganize').toggleClass('w100');
+                        $('#sectionOrganize').toggleClass('w50');
+                      });
+                    })  
+                  })(window.jQuery)                  
+                </script>
               </div>
             </div>
             <div class="section-body">
-              <section class="card-deck card-group-normal">
+              <section class="card-group-normal">
                 <!-- build:section component.card_normal --><!-- /build -->  
                 <!-- build:section component.card_normal --><!-- /build -->  
                 <!-- build:section component.card_normal --><!-- /build -->  
@@ -51,7 +62,7 @@
               </section>
             </div>
           </section>
-          <section class="common__section w50 ml-4">
+          <section id="sectionResume" class="common__section w50 ml-4p">
             <div class="section-header">
               <div class="left-block">
                 <div class="section-name">
@@ -59,13 +70,23 @@
                 </div>
               </div>
               <div class="right-block">
-                <button class="btn btn-icon">
+                <button class="btn btn-icon" data-toggle="modal" data-target="#modalRefresh">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.333 512"><path d="M500.333 0h-47.411c-6.853 0-12.314 5.729-11.986 12.574l3.966 82.759C399.416 41.899 331.672 8 256.001 8 119.34 8 7.899 119.526 8 256.187 8.101 393.068 119.096 504 256 504c63.926 0 122.202-24.187 166.178-63.908 5.113-4.618 5.354-12.561.482-17.433l-33.971-33.971c-4.466-4.466-11.64-4.717-16.38-.543C341.308 415.448 300.606 432 256 432c-97.267 0-176-78.716-176-176 0-97.267 78.716-176 176-176 60.892 0 114.506 30.858 146.099 77.8l-101.525-4.865c-6.845-.328-12.574 5.133-12.574 11.986v47.411c0 6.627 5.373 12 12 12h200.333c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12z"/></svg>
                 </button>
-                <button class="btn btn-icon">
+                <button class="btn btn-icon d-sm-none" id="testToggleClass2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 56v95.005c0 21.382-25.851 32.09-40.971 16.971l-27.704-27.704-107.242 107.243c-4.686 4.686-12.284 4.686-16.971 0l-22.627-22.627c-4.686-4.686-4.686-12.284 0-16.971l107.243-107.243-27.704-27.704C296.905 57.851 307.613 32 328.995 32H424c13.255 0 24 10.745 24 24zM175.917 264.485L68.674 371.728 40.97 344.024C25.851 328.905 0 339.613 0 360.995V456c0 13.255 10.745 24 24 24h95.005c21.382 0 32.09-25.851 16.971-40.971l-27.704-27.704 107.243-107.243c4.686-4.686 4.686-12.284 0-16.971l-22.627-22.627c-4.687-4.685-12.285-4.685-16.971.001z"/></svg>
                 </button>
-                
+                <script>
+                  (function($){
+                    $(document).ready(function() {
+                      $('#testToggleClass2').click(function() {                        
+                        $(this).toggleClass('expanded');
+                        $('#sectionResume').toggleClass('w100');
+                        $('#sectionResume').toggleClass('w50');
+                      });
+                    })  
+                  })(window.jQuery)                  
+                </script>
               </div>
             </div>
             <div class="section-body">
@@ -89,108 +110,5 @@
 </div>  <!-- master -->
 
 <!-- build:section component.bottom_bar --><!-- /build -->
-
-<!-- === CREATE POPUP === -->
-<div id="modalCreate" class="modal modal-dark fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-title">Modal title</div>
-      </div>
-      <div class="modal-body">
-        <form action="">
-          <div class="form-group">
-            <label for="">Case number</label>
-            <input type="text" class="form-control is-invalid" aria-describedby="" />
-            <div class="invalid-feedback">
-              Please fill in report case number
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="">Event type</label>
-            <select class="custom-select">
-              <option selected>Car accident</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="">Location</label>
-            <input type="text" class="form-control" aria-describedby="" value="Mosegårdsvej 89, København K" />
-          </div>
-          <hr>
-          <div class="form-group">
-            <label for="">Time of event</label>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Event time was not the same day</label>
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">From</label>
-                  <select class="custom-select">
-                    <option selected>2018/12/22</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">To</label>
-                  <select disabled class="custom-select">
-                    <option selected>2018/12/22</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-            </div><!-- row -->
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">Starting time</label>
-                  <select class="custom-select">
-                    <option value="1">00:00:00</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">Ending time</label>
-                  <select class="custom-select">
-                    <option value="1">00:00:00</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-            </div><!-- row -->
-          </div><!-- container-fluid -->
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-6">
-              <button type="button" class="btn btn-block btn-lg btn-primary">Create</button>
-            </div>
-            <div class="col-6">
-              <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div><!-- row -->
-        </div><!-- container-fluid -->
-      </div>
-    </div><!-- modal-content -->
-  </div><!-- modal-dialog -->
-</div><!-- modalCreate -->
 
 <!-- build:section layout.footer --><!-- /build -->

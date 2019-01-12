@@ -255,80 +255,30 @@
   </div><!-- modal-dialog -->
 </div><!-- modalTime -->
 
-<!-- === RAIL POPUP === -->
-<div id="modalRight" class="modal modal-dark fixed-right fade" tabindex="-1" role="dialog">
+
+<!-- === REFRESH POPUP === -->
+<div id="modalRefresh" class="modal modal-dark fade" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="modal-title">TIME OF EVENT</div>
+        <div class="modal-title"></div>
       </div>
       <div class="modal-body">
-        <form action="">
-          <div class="form-group">
-            <label for="">Time of event</label>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Event time was not the same day</label>
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">From</label>
-                  <select class="custom-select">
-                    <option selected>2018/12/22</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">To</label>
-                  <select disabled class="custom-select">
-                    <option selected>2018/12/22</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-            </div><!-- row -->
-            <div class="row">
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">Starting time</label>
-                  <select class="custom-select">
-                    <option value="1">00:00:00</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="form-group">
-                  <label for="">Ending time</label>
-                  <select class="custom-select">
-                    <option value="1">00:00:00</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-              </div>
-            </div><!-- row -->
-          </div><!-- container-fluid -->
-        </form>
+        The dashboard workspace will be refreshed. Please make sure the necessary documentation has been added to the report.
       </div>
       <div class="modal-footer">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-6">
-              <a href="/dashboard.html" class="btn btn-block btn-lg btn-primary">UPDATE</a>
+            <div class="col-9">
+              <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Understood, do not show this again</label>
+                </div>
+              </div>
             </div>
-            <div class="col-6">
-              <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">CANCEL</button>
+            <div class="col-3">
+              <button type="button" class="btn btn-block btn-lg btn-secondary" data-dismiss="modal">OK</button>
             </div>
           </div><!-- row -->
         </div><!-- container-fluid -->
@@ -336,6 +286,7 @@
     </div><!-- modal-content -->
   </div><!-- modal-dialog -->
 </div><!-- modalTime -->
+
 
 </body>
 </html>

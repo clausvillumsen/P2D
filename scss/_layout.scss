@@ -60,6 +60,10 @@
     align-items: stretch;
     overflow-x: auto;
     width: calc(100vw - 225px);
+    @media (max-width: $breakpoint-ipad) {
+      padding: 20px;
+      display: block;
+    }
     &::-webkit-scrollbar {
       width: 5px;
       height: 5px;
