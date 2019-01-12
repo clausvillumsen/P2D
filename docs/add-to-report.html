@@ -374,11 +374,9 @@
                                         Add a comment
                                     </div>
                                     <form action="">
-                                        <textarea id="" class="form-control mb-4">
-
-                  </textarea>
+                                        <textarea id="" class="form-control mb-4" style="height: 150px"></textarea>
                                         <div class="text-right">
-                                            <a href="" class="btn btn-primary">ADD TO REPORT</a>
+                                            <a href="#" data-toggle="modal" data-target="#modalAddToReport" class="btn btn-primary">ADD TO REPORT</a>
                                             <a href="" class="btn btn-dark">CANCEL</a>
                                         </div>
                                     </form>
@@ -390,6 +388,29 @@
             </div>
         </div> <!-- master-inner -->
     </div> <!-- master -->
+
+    <!-- === CONFIRM ADD TO REPORT POPUP === -->
+    <div id="modalAddToReport" class="modal modal-dark no-header fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    Your document has been added in the report successfully
+                </div>
+                <div class="modal-footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="/report.html" class="btn btn-block btn-lg btn-primary">Check Report</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="/dashboard.html" class="btn btn-block btn-lg btn-secondary">Continue detect</a>
+                            </div>
+                        </div><!-- row -->
+                    </div><!-- container-fluid -->
+                </div>
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modalTime -->
 
 
     <!-- === CREATE POPUP === -->

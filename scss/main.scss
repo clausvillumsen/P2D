@@ -25,7 +25,7 @@ html {
   }
 }
 body {
-  background: #35353a;
+  background: #2b2b2c;
   color: $primary-text-color;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
@@ -452,8 +452,8 @@ img {
 }
 // Input
 .form-control {
-  border-color: #3d3d3e;
-  background: #333;
+  border-color: #3e3e3f;
+  background-color: #333;
   color: #fff;
   &:focus {
     border-color: $primary-color;

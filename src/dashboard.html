@@ -173,7 +173,7 @@
               </table>
             </div>
           </section>
-          <section class="common__section w30">
+          <section class="common__section w30 ml-4">
             <div class="section-header">
               <div class="left-block">
                 <div class="section-name">
@@ -223,6 +223,7 @@
   </div> <!-- master-inner -->
 </div>  <!-- master -->
 
+<!-- BOTTOM BAR -->
 <div id="bottomBar">
   <a href="add-to-report.html" class="link-action">
     <span class="icon-holder">
@@ -241,6 +242,7 @@
     </span>
   </a>
 </div>
+<!-- /BOTTOM BAR -->
 
 <!-- === REFRESH POPUP === -->
 <div id="modalRefresh" class="modal modal-dark fade" tabindex="-1" role="dialog">
@@ -272,5 +274,53 @@
     </div><!-- modal-content -->
   </div><!-- modal-dialog -->
 </div><!-- modalTime -->
+
+<!-- === EDIT IMAGE POPUP === -->
+<div id="modalEditImage" class="modal modal-dark rail show" style="display: block" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">EDIT PHOTO</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <figure class="figure-edit-photo">
+          <caption>
+            Image_docs.jpg
+          </caption>
+          <img src="https://picsum.photos/360/240/?blur" alt="">
+        </figure>
+        <div class="nav-edit-control">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-dark">ROTATE</button>
+            <button type="button" class="btn btn-dark">COVER</button>
+          </div>
+        </div>
+        <hr>
+        <div class="text-white pb-2">
+          Add a description
+        </div>
+        <form action="" id="formCommit">
+          <textarea class="form-control"></textarea>
+        </form>
+      </div>   
+      <div class="modal-footer">
+        <div class="d-flex justify-content-between">
+          <div>
+            a
+          </div>
+          <div class="slider-component-holder">
+
+          </div>
+          <div>
+            b
+          </div>
+        </div>
+      </div>  
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modalEditImage -->
 
 <!-- build:section layout.footer --><!-- /build -->

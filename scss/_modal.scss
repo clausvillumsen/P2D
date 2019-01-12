@@ -5,6 +5,11 @@
 		border-radius: 4px;
 		border: none;	
 	}
+	&.no-header {
+		.modal-body {
+			border-radius: 4px 4px 0 0;
+		}
+	}
 	.modal-content {
 		border: none;	
 	}
@@ -50,5 +55,44 @@
 		border-bottom: none;
 		border-top-color: #3e3e3f;
 		margin: 30px -25px;
+	}
+}
+.modal.modal-dark.rail {
+	.modal-dialog {
+		max-width: 360px;
+		min-width: 300px;
+		margin: 0;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		top: $headerHeight;
+		border-radius: 0;
+		border-left: 1px solid #3e3e3f;
+		border-bottom: 1px solid #3e3e3f;
+		.modal-content {
+			display: flex;
+			height: 100%;
+			flex-direction: column;
+		}
+		.modal-header {
+			border-radius: 0;
+		}
+		.modal-body {
+			border-left: none;
+		}
+		.modal-footer {
+			border-radius: 0;
+			border-bottom: none;
+			background: #1e1e20;
+			padding: 30px 25px;
+			.d-flex {
+				width: 100%;
+			}
+			.slider-component-holder {
+				flex-grow: 1;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+		}
 	}
 }
