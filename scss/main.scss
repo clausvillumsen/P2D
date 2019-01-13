@@ -650,6 +650,7 @@ textarea.form-control {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  display: block;
 }
 // Alert
 .alert {  
@@ -787,6 +788,11 @@ textarea.form-control {
   width: 30.33%;
   flex-basis: 30.33%;
   min-width: 30.33%; 
+  @media (max-width: $breakpoint-ipad) {
+    width: 100%;
+    flex-basis: 100%;
+    min-width: 100%;
+  }
 }
 .common__layout {
   display: -webkit-flex;
@@ -796,9 +802,6 @@ textarea.form-control {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  + .common__section {
-    margin-left: 4%;
-  }
 }
 .common__section {
   display: -webkit-flex;
@@ -822,7 +825,9 @@ textarea.form-control {
     margin-right: 0;
     margin-bottom: 20px;
   }
-
+  @media (max-width: $breakpoint-xs) {
+    display: block;
+  }
   .section-header {
     border-radius: 4px 4px 0 0;
     background: #232324;
@@ -870,6 +875,9 @@ textarea.form-control {
     color: #fff;
     text-transform: uppercase;
     padding: 12px 20px;
+    @media (max-width: $breakpoint-xs) {
+      font-size: 12px;
+    }
   }
   .btn-icon {
     box-shadow: none;

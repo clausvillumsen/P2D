@@ -23,6 +23,10 @@
 		border-radius: 4px 4px 0 0;
 		border: none;
 		padding: 13px 25px;
+		@media (max-width: $breakpoint-sm) {
+			padding-top: 7px;
+			padding-bottom: 7;
+		}
 		.close {
 			padding: 13px;
 			color: #cacaca;
@@ -65,6 +69,9 @@
 .modal.modal-dark.rail.modal-match {
 	.modal-dialog {
 		min-width: 610px;
+		@media (max-width: $breakpoint-sm) {
+			min-width: 0;
+		}
 	}
 }
 #modalMatchImage {
@@ -83,6 +90,11 @@
 		border-radius: 0;
 		border-left: 1px solid #3e3e3f;
 		border-bottom: 1px solid #3e3e3f;
+		@media (max-width: $breakpoint-sm) {
+			left: 0;
+			width: 100%;
+			max-width: none;
+		}
 		.modal-content {
 			display: flex;
 			height: 100%;
@@ -94,12 +106,17 @@
 		.modal-body {
 			border-left: none;
 			background: #242424;
+			overflow: auto;
 		}
 		.modal-footer {
 			border-radius: 0;
 			border-bottom: none;
 			background: #1e1e20;
 			padding: 30px 25px;
+			@media (max-width: $breakpoint-sm) {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
 			.d-flex {
 				width: 100%;
 			}

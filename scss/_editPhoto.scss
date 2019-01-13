@@ -9,6 +9,13 @@
     margin-left: -25px;
     margin-right: -25px;
     margin-bottom: 25px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .nav-edit-control {

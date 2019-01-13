@@ -10,10 +10,6 @@
 	}	
 	.card-header {
 		font-size: 13px;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		padding: 6px 10px;
 		align-items: center;
@@ -41,6 +37,9 @@
 		overflow: hidden;
 		white-space: nowrap;
 	}
+	.text-ellipse {
+		max-width: 200px;
+	}
 	table {
 		td {
 			padding-right: 5px;
@@ -48,10 +47,6 @@
 	}
 }
 .card-group-normal {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	flex-wrap: wrap;
 	@media (max-width: $breakpoint-xs) {
@@ -71,8 +66,7 @@
 		@media (max-width: $breakpoint-xs) { 
 			margin-left: 0;
 			margin-right: 0;
-			min-width: 300px;
-			flex-grow: 1;
+			flex: 0 0 100%;	
 		}
 	}
 }

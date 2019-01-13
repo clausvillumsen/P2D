@@ -44,7 +44,11 @@
   flex-direction: column;
   @media (max-width: $breakpoint-sm) {
     padding-left: 20px;
-    padding-right: 20px;    
+    padding-right: 20px;        
+  }
+  @media (max-width: $breakpoint-xs) {
+    height: auto;
+    display: block;
   }
   .primary-inner {
     padding: 40px;

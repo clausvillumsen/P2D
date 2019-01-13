@@ -22,9 +22,8 @@
 		display: block;
 		padding: 16px 50px;
 		@media (max-width: $breakpoint-xs) {
-			padding-left: 15px;
-			padding-right: 15px;
-			font-size: 14px;
+			padding: 10px;
+			font-size: 12px;
 		}
 		& + .link-action {
 			//border-left: 1px solid rgba(0,0,0,.3);
@@ -54,6 +53,9 @@
 		svg {
 			height: 18px;
 			fill: $primary-text-color;
+			@media (max-width: $breakpoint-xs) {
+				height: 14px;
+			}
 		}
 	}
 }
