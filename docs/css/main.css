@@ -926,7 +926,8 @@ textarea.form-control {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #4e4b61; }
+  color: #4e4b61;
+  min-height: 50px; }
   .common__page-name a {
     color: #4e4b61; }
   @media (max-width: 1023px) {
