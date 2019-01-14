@@ -90,23 +90,6 @@ hr {
   border-bottom: 1px solid #ffffff; }
 
 input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="tel"],
-input[type="email"] {
-  border: 1px solid #e5e5e5;
-  background: #fff;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  display: block;
-  width: 100%;
-  padding: .1rem .75rem;
-  font-size: 1rem;
-  line-height: 1.25;
-  border-radius: 2px;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
-
-input[type="text"],
 input[type="button"],
 input[type="number"],
 input[type="email"],
@@ -508,6 +491,14 @@ textarea.form-control {
     color: #fff; }
   .form-control.is-invalid:focus {
     border-color: #e22228; }
+  .form-control.white {
+    background: #fff;
+    border-color: #fff;
+    color: #333; }
+    .form-control.white:focus {
+      border-color: #6877f9;
+      background: #fff;
+      color: #333; }
 
 .custom-control-input:checked ~ .custom-control-indicator {
   background-color: #6877f9; }

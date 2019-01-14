@@ -80,13 +80,6 @@ hr {
   border-bottom: 1px solid #ffffff;
 }
 input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="tel"],
-input[type="email"] {
-  @include defaultInput;
-}
-input[type="text"],
 input[type="button"],
 input[type="number"],
 input[type="email"],
@@ -466,7 +459,6 @@ textarea.form-control {
   border-color: #3e3e3f;
   background-color: #333;
   color: #fff;
-
   &:focus {
     border-color: $primary-color;
     box-shadow: none;
@@ -477,6 +469,16 @@ textarea.form-control {
     &:focus {
       border-color: $red;
     } 
+  }
+  &.white {
+    background: #fff; 
+    border-color: #fff;
+    color: #333;
+    &:focus {
+      border-color: $primary-color;
+      background: #fff;
+      color: #333;
+    }
   }
 }
 .custom-control-input{
